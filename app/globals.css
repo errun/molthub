@@ -83,7 +83,7 @@ a {
   }
 
   .btn-strong:hover {
-    @apply bg-accent/90;
+    background-color: rgba(102, 255, 214, 0.9);
   }
 
   .btn-ghost {
