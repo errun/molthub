@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Molthub.bot ¡ª Reliability Signals",
+  title: "Molthub.bot ¡ª Moltbot Reliability Signals",
   description:
-    "Community-driven reliability signals for Moltbot skills. Check MSI? before you ship.",
+    "Community-driven reliability signals for Moltbot skills. Check MSI(TM) before you ship.",
   openGraph: {
-    title: "Molthub.bot ¡ª Reliability Signals",
+    title: "Molthub.bot ¡ª Moltbot Reliability Signals",
     description:
-      "Community-driven reliability signals for Moltbot skills. Check MSI? before you ship.",
+      "Community-driven reliability signals for Moltbot skills. Check MSI(TM) before you ship.",
     type: "website"
   },
   keywords: [
@@ -28,13 +28,13 @@ export default function HomePage() {
           <div className="space-y-4">
             <span className="tag">Community Signal Layer</span>
             <h1 className="font-display text-5xl leading-[1.05] tracking-tight md:text-7xl">
-              Molthub.bot
+              Molthub.bot ¡ª Moltbot Reliability Signals
             </h1>
             <p className="text-lg text-muted md:text-xl">
               Community-Driven Reliability Signals for Moltbot Skills
             </p>
             <p className="text-xl font-semibold md:text-2xl">
-              Check MSI? before you ship.
+              Check MSI(TM) before you ship.
             </p>
           </div>
           <div className="flex flex-wrap gap-3">
@@ -62,11 +62,11 @@ export default function HomePage() {
               <div className="mt-4 grid gap-3 text-sm">
                 <div className="flex items-center justify-between">
                   <span>Stable</span>
-                  <span className="text-muted">MSI ¡Ý 80</span>
+                  <span className="text-muted">MSI &gt;= 80</span>
                 </div>
                 <div className="flex items-center justify-between">
                   <span>Risky</span>
-                  <span className="text-muted">40 ¡Ü MSI &lt; 80</span>
+                  <span className="text-muted">40 &lt;= MSI &lt; 80</span>
                 </div>
                 <div className="flex items-center justify-between">
                   <span>Unstable</span>
@@ -91,7 +91,7 @@ export default function HomePage() {
             href: "/skills"
           },
           {
-            title: "Reliability Radar?",
+            title: "Reliability Radar(TM)",
             desc: "Track elevated risk signals and configuration instability notes.",
             cta: "View radar",
             href: "/radar"
@@ -115,7 +115,7 @@ export default function HomePage() {
             <h3 className="mt-5 font-display text-2xl">{item.title}</h3>
             <p className="mt-3 text-sm text-muted">{item.desc}</p>
             <span className="mt-6 inline-flex text-sm font-semibold text-accent">
-              {item.cta} ¡ú
+              {item.cta} -&gt;
             </span>
           </Link>
         ))}

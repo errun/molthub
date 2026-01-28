@@ -3,11 +3,11 @@ import SkillsClient from "@/components/SkillsClient";
 import skillsData from "@/data/skills.json";
 
 export const metadata: Metadata = {
-  title: "Molthub.bot ！ Skills Dashboard",
+  title: "Molthub.bot ！ Moltbot Skills Dashboard",
   description:
     "Browse Moltbot skills with reliability signals, MSI tiers, and recent updates.",
   openGraph: {
-    title: "Molthub.bot ！ Skills Dashboard",
+    title: "Molthub.bot ！ Moltbot Skills Dashboard",
     description:
       "Browse Moltbot skills with reliability signals, MSI tiers, and recent updates.",
     type: "website"

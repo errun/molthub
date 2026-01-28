@@ -36,9 +36,9 @@ export default function SkillsClient({ skills }: { skills: Skill[] }) {
     <div className="space-y-6">
       <div className="card flex flex-col gap-4 p-6 md:flex-row md:items-center md:justify-between">
         <div className="space-y-2">
-          <h1 className="font-display text-4xl">Skills Dashboard</h1>
+          <h1 className="font-display text-4xl">Moltbot Skills Dashboard</h1>
           <p className="text-sm text-muted">
-            Search by name, then sort by MSI to review current reliability posture.
+            Search Moltbot skills by name, then sort by MSI to review current reliability posture.
           </p>
         </div>
         <div className="flex flex-wrap items-center gap-3">
@@ -54,7 +54,7 @@ export default function SkillsClient({ skills }: { skills: Skill[] }) {
             onClick={() => setDescending((prev) => !prev)}
             className="btn"
           >
-            Sort: MSI {descending ? "High ¡ú Low" : "Low ¡ú High"}
+            Sort: MSI {descending ? "High -> Low" : "Low -> High"}
           </button>
         </div>
       </div>

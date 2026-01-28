@@ -8,13 +8,13 @@ const severityStyles: Record<string, string> = {
 };
 
 export const metadata: Metadata = {
-  title: "Molthub.bot ！ Reliability Radar",
+  title: "Molthub.bot ！ Moltbot Reliability Radar",
   description:
-    "Reliability Radar? highlights elevated risk signals and stability observations for Moltbot skills.",
+    "Reliability Radar(TM) highlights elevated risk signals and stability observations for Moltbot skills.",
   openGraph: {
-    title: "Molthub.bot ！ Reliability Radar",
+    title: "Molthub.bot ！ Moltbot Reliability Radar",
     description:
-      "Reliability Radar? highlights elevated risk signals and stability observations for Moltbot skills.",
+      "Reliability Radar(TM) highlights elevated risk signals and stability observations for Moltbot skills.",
     type: "website"
   },
   keywords: [
@@ -31,10 +31,11 @@ export default function RadarPage() {
     <section className="container py-16">
       <div className="space-y-6">
         <div className="card p-6">
-          <span className="tag">Reliability Radar?</span>
-          <h1 className="mt-4 font-display text-4xl">Signal Briefs</h1>
+          <span className="tag">Reliability Radar(TM)</span>
+          <h1 className="mt-4 font-display text-4xl">Moltbot Reliability Radar</h1>
           <p className="mt-2 text-sm text-muted">
-            Neutral summaries of elevated risk, instability, and configuration signals.
+            Neutral summaries of elevated risk, instability, and configuration signals
+            for Moltbot skills.
           </p>
         </div>
 
@@ -68,7 +69,7 @@ export default function RadarPage() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  Source link ★
+                  Source link -&gt;
                 </a>
               )}
             </article>

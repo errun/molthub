@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Molthub.bot ！ About & Methodology",
+  title: "Molthub.bot ！ Moltbot Methodology",
   description:
     "About Molthub.bot and the neutral methodology used to compile reliability signals for Moltbot skills.",
   openGraph: {
-    title: "Molthub.bot ！ About & Methodology",
+    title: "Molthub.bot ！ Moltbot Methodology",
     description:
       "About Molthub.bot and the neutral methodology used to compile reliability signals for Moltbot skills.",
     type: "website"
@@ -25,7 +25,7 @@ export default function AboutPage() {
       <div className="space-y-8">
         <div className="card p-6">
           <span className="tag">About</span>
-          <h1 className="mt-4 font-display text-4xl">About & Methodology</h1>
+          <h1 className="mt-4 font-display text-4xl">Moltbot Methodology</h1>
           <p className="mt-3 text-sm text-muted">
             Molthub.bot is a non-official, community-driven reliability signal layer
             for Moltbot skills. The goal is to document stability, survivability, and
@@ -47,7 +47,7 @@ export default function AboutPage() {
             </p>
           </div>
           <div className="card p-6">
-            <h2 className="font-display text-2xl">MSI? Tiers</h2>
+            <h2 className="font-display text-2xl">MSI Tiers</h2>
             <p className="mt-3 text-sm text-muted">
               MSI is presented as a single score for quick scanning. Tier labels
               indicate relative stability at the time of the latest update.
@@ -60,7 +60,7 @@ export default function AboutPage() {
         </div>
 
         <div className="card p-6">
-          <h2 className="font-display text-2xl">Reliability Radar?</h2>
+          <h2 className="font-display text-2xl">Reliability Radar(TM)</h2>
           <p className="mt-3 text-sm text-muted">
             Radar entries highlight elevated risk or degraded behavior when
             specific conditions are observed. Each entry lists affected skills

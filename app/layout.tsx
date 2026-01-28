@@ -16,7 +16,7 @@ const body = IBM_Plex_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Molthub.bot",
+  title: "Molthub.bot ¡ª Moltbot Reliability Signals",
   description: "Community-driven reliability signals for Moltbot skills.",
   keywords: [
     "reliability",
