@@ -1,0 +1,156 @@
+[
+  {
+    "name": "twitter-search",
+    "msi": 85,
+    "tier": "Stable",
+    "notes": "Consistent behavior across common setups.",
+    "lastUpdate": "2026-01-28"
+  },
+  {
+    "name": "web-extract",
+    "msi": 78,
+    "tier": "Risky",
+    "notes": "Occasional variance with complex layouts.",
+    "lastUpdate": "2026-01-28"
+  },
+  {
+    "name": "slack-alert",
+    "msi": 92,
+    "tier": "Stable",
+    "notes": "Stable delivery across standard webhook paths.",
+    "lastUpdate": "2026-01-28"
+  },
+  {
+    "name": "docs-summarize",
+    "msi": 88,
+    "tier": "Stable",
+    "notes": "Reliable output for typical document sizes.",
+    "lastUpdate": "2026-01-28"
+  },
+  {
+    "name": "notion-sync",
+    "msi": 73,
+    "tier": "Risky",
+    "notes": "Degraded behavior with large nested pages.",
+    "lastUpdate": "2026-01-28"
+  },
+  {
+    "name": "jira-triage",
+    "msi": 81,
+    "tier": "Stable",
+    "notes": "Stable under default field mappings.",
+    "lastUpdate": "2026-01-28"
+  },
+  {
+    "name": "webhook-router",
+    "msi": 67,
+    "tier": "Risky",
+    "notes": "Elevated risk when traffic spikes beyond defaults.",
+    "lastUpdate": "2026-01-28"
+  },
+  {
+    "name": "csv-cleaner",
+    "msi": 59,
+    "tier": "Risky",
+    "notes": "Minor stability drift on mixed delimiters.",
+    "lastUpdate": "2026-01-28"
+  },
+  {
+    "name": "rss-poller",
+    "msi": 83,
+    "tier": "Stable",
+    "notes": "Stable polling cadence under typical feeds.",
+    "lastUpdate": "2026-01-28"
+  },
+  {
+    "name": "email-digest",
+    "msi": 76,
+    "tier": "Risky",
+    "notes": "Occasional scheduling drift in peak windows.",
+    "lastUpdate": "2026-01-28"
+  },
+  {
+    "name": "uptime-check",
+    "msi": 90,
+    "tier": "Stable",
+    "notes": "Consistent survivability across regions.",
+    "lastUpdate": "2026-01-28"
+  },
+  {
+    "name": "prompt-guard",
+    "msi": 45,
+    "tier": "Risky",
+    "notes": "Stability sensitive to rule depth.",
+    "lastUpdate": "2026-01-28"
+  },
+  {
+    "name": "s3-uploader",
+    "msi": 84,
+    "tier": "Stable",
+    "notes": "Stable behavior across standard storage classes.",
+    "lastUpdate": "2026-01-28"
+  },
+  {
+    "name": "image-resize",
+    "msi": 71,
+    "tier": "Risky",
+    "notes": "Degraded performance on large batch sizes.",
+    "lastUpdate": "2026-01-28"
+  },
+  {
+    "name": "pdf-to-text",
+    "msi": 62,
+    "tier": "Risky",
+    "notes": "Unstable extraction on heavily scanned files.",
+    "lastUpdate": "2026-01-28"
+  },
+  {
+    "name": "locale-normalizer",
+    "msi": 38,
+    "tier": "Unstable",
+    "notes": "Failed normalization when locale inputs are mixed.",
+    "lastUpdate": "2026-01-28"
+  },
+  {
+    "name": "timezone-convert",
+    "msi": 52,
+    "tier": "Risky",
+    "notes": "Stability drops under legacy offsets.",
+    "lastUpdate": "2026-01-28"
+  },
+  {
+    "name": "billing-audit",
+    "msi": 33,
+    "tier": "Unstable",
+    "notes": "Degraded behavior during partial reconciliation.",
+    "lastUpdate": "2026-01-28"
+  },
+  {
+    "name": "log-shipper",
+    "msi": 79,
+    "tier": "Risky",
+    "notes": "Elevated risk at sustained high throughput.",
+    "lastUpdate": "2026-01-28"
+  },
+  {
+    "name": "chrome-driver",
+    "msi": 27,
+    "tier": "Unstable",
+    "notes": "Unstable in headless environments without patches.",
+    "lastUpdate": "2026-01-28"
+  },
+  {
+    "name": "session-replay",
+    "msi": 41,
+    "tier": "Risky",
+    "notes": "Viability depends on recorder limits.",
+    "lastUpdate": "2026-01-28"
+  },
+  {
+    "name": "rate-limit-monitor",
+    "msi": 86,
+    "tier": "Stable",
+    "notes": "Stable alerts with standard thresholds.",
+    "lastUpdate": "2026-01-28"
+  }
+]

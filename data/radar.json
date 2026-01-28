@@ -1,0 +1,74 @@
+[
+  {
+    "title": "Elevated instability observed under default configuration",
+    "severity": "High",
+    "type": "Configuration",
+    "affectedSkills": ["webhook-router", "notion-sync"],
+    "summary": "Multiple reports indicate degraded behavior when defaults are used without tuning.",
+    "sourceUrl": "https://example.com/configuration-brief",
+    "updatedAt": "2026-01-28"
+  },
+  {
+    "title": "Survivability drift during regional latency spikes",
+    "severity": "Medium",
+    "type": "Environment",
+    "affectedSkills": ["uptime-check", "log-shipper"],
+    "summary": "Transient instability observed when latency exceeds regional baselines.",
+    "sourceUrl": "https://example.com/environment-signal",
+    "updatedAt": "2026-01-28"
+  },
+  {
+    "title": "Stability variance on large document batches",
+    "severity": "Medium",
+    "type": "Stability",
+    "affectedSkills": ["docs-summarize", "pdf-to-text"],
+    "summary": "Degraded throughput appears when batch size surpasses standard defaults.",
+    "sourceUrl": "https://example.com/stability-note",
+    "updatedAt": "2026-01-28"
+  },
+  {
+    "title": "Configuration sensitivity with nested page depth",
+    "severity": "Low",
+    "type": "Configuration",
+    "affectedSkills": ["notion-sync"],
+    "summary": "Reliability decreases as nested depth increases beyond typical use.",
+    "sourceUrl": "https://example.com/nested-depth",
+    "updatedAt": "2026-01-28"
+  },
+  {
+    "title": "Unstable extraction reported on scanned PDFs",
+    "severity": "High",
+    "type": "Stability",
+    "affectedSkills": ["pdf-to-text"],
+    "summary": "Failed extraction observed when OCR baselines are absent.",
+    "sourceUrl": "https://example.com/pdf-extraction",
+    "updatedAt": "2026-01-28"
+  },
+  {
+    "title": "Elevated risk during schedule overlaps",
+    "severity": "Medium",
+    "type": "Configuration",
+    "affectedSkills": ["email-digest", "rss-poller"],
+    "summary": "Degraded delivery timing appears when multiple schedules overlap.",
+    "sourceUrl": "https://example.com/schedule-overlap",
+    "updatedAt": "2026-01-28"
+  },
+  {
+    "title": "Environment variance on headless runtime",
+    "severity": "High",
+    "type": "Environment",
+    "affectedSkills": ["chrome-driver"],
+    "summary": "Unstable session control observed without runtime patches.",
+    "sourceUrl": "https://example.com/headless-runtime",
+    "updatedAt": "2026-01-28"
+  },
+  {
+    "title": "Stability regression under mixed locales",
+    "severity": "Medium",
+    "type": "Environment",
+    "affectedSkills": ["locale-normalizer", "timezone-convert"],
+    "summary": "Degraded normalization noted when locale sources diverge.",
+    "sourceUrl": "https://example.com/locale-signal",
+    "updatedAt": "2026-01-28"
+  }
+]
