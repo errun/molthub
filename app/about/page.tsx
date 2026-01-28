@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Molthub.bot ¡ª Moltbot Methodology",
+  title: "Molthub.bot - Moltbot Methodology",
   description:
     "About Molthub.bot and the neutral methodology used to compile reliability signals for Moltbot skills.",
   openGraph: {
-    title: "Molthub.bot ¡ª Moltbot Methodology",
+    title: "Molthub.bot - Moltbot Methodology",
     description:
       "About Molthub.bot and the neutral methodology used to compile reliability signals for Moltbot skills.",
     type: "website"
@@ -80,3 +80,4 @@ export default function AboutPage() {
     </section>
   );
 }
+

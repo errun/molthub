@@ -8,11 +8,11 @@ const severityStyles: Record<string, string> = {
 };
 
 export const metadata: Metadata = {
-  title: "Molthub.bot ¡ª Moltbot Reliability Radar",
+  title: "Molthub.bot - Moltbot Reliability Radar",
   description:
     "Reliability Radar(TM) highlights elevated risk signals and stability observations for Moltbot skills.",
   openGraph: {
-    title: "Molthub.bot ¡ª Moltbot Reliability Radar",
+    title: "Molthub.bot - Moltbot Reliability Radar",
     description:
       "Reliability Radar(TM) highlights elevated risk signals and stability observations for Moltbot skills.",
     type: "website"
@@ -79,3 +79,4 @@ export default function RadarPage() {
     </section>
   );
 }
+

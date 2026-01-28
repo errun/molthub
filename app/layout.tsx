@@ -16,7 +16,7 @@ const body = IBM_Plex_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Molthub.bot ¡ª Moltbot Reliability Signals",
+  title: "Molthub.bot - Moltbot Reliability Signals",
   description: "Community-driven reliability signals for Moltbot skills.",
   keywords: [
     "reliability",
@@ -67,3 +67,4 @@ export default function RootLayout({
     </html>
   );
 }
+

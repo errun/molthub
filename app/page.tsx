@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Molthub.bot ¡ª Moltbot Reliability Signals",
+  title: "Molthub.bot - Moltbot Reliability Signals",
   description:
     "Community-driven reliability signals for Moltbot skills. Check MSI(TM) before you ship.",
   openGraph: {
-    title: "Molthub.bot ¡ª Moltbot Reliability Signals",
+    title: "Molthub.bot - Moltbot Reliability Signals",
     description:
       "Community-driven reliability signals for Moltbot skills. Check MSI(TM) before you ship.",
     type: "website"
@@ -28,7 +28,7 @@ export default function HomePage() {
           <div className="space-y-4">
             <span className="tag">Community Signal Layer</span>
             <h1 className="font-display text-5xl leading-[1.05] tracking-tight md:text-7xl">
-              Molthub.bot ¡ª Moltbot Reliability Signals
+              Molthub.bot - Moltbot Reliability Signals
             </h1>
             <p className="text-lg text-muted md:text-xl">
               Community-Driven Reliability Signals for Moltbot Skills
@@ -123,3 +123,4 @@ export default function HomePage() {
     </section>
   );
 }
+
