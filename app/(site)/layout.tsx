@@ -10,7 +10,7 @@ export default async function SiteLayout({
 
   return (
     <div className="min-h-screen">
-      <header className="border-b border-white/5 bg-black/30 backdrop-blur">
+      <header className="relative z-50 border-b border-white/5 bg-black/30 backdrop-blur">
         <div className="container flex items-center justify-between py-6">
           <Link href="/" className="font-display text-lg tracking-[0.2em] uppercase">
             Molthub.bot
@@ -29,7 +29,7 @@ export default async function SiteLayout({
               <summary className="btn-ghost cursor-pointer list-none text-xs">
                 {dict.nav.language}
               </summary>
-              <div className="absolute right-0 mt-2 w-40 rounded-xl border border-border bg-black/80 p-2 text-xs text-muted shadow-glow">
+              <div className="absolute right-0 z-50 mt-2 w-40 rounded-xl border border-border bg-black/80 p-2 text-xs text-muted shadow-glow">
                 <Link className="block rounded-lg px-3 py-2 hover:bg-white/10" href="/">
                   {dict.nav.languageOptions.en}
                 </Link>
