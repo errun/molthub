@@ -1,0 +1,151 @@
+{
+  "nav": {
+    "skills": "Skills",
+    "radar": "Radar",
+    "about": "About"
+  },
+  "footer": {
+    "line1": "Non-official reliability signal layer for Moltbot skills.",
+    "line2": "MSI and Radar are descriptive, not prescriptive."
+  },
+  "home": {
+    "metaTitle": "Molthub.bot - Moltbot Reliability Signals & MSI(TM) Tiers",
+    "metaDescription": "Track Moltbot reliability signals and MSI(TM) tiers for community-vetted skills. Explore stability, survivability, and viability notes before you ship.",
+    "keywords": [
+      "Moltbot reliability",
+      "Moltbot MSI",
+      "Moltbot reliability signals",
+      "Moltbot skills ecosystem",
+      "Molthub.bot"
+    ],
+    "heroTag": "Community Signal Layer",
+    "title": "Molthub.bot - Moltbot Reliability Signals",
+    "subtitle": "Community-Driven Reliability Signals for Moltbot Skills",
+    "slogan": "Check MSI(TM) before you ship.",
+    "ctaSkills": "Skills",
+    "ctaRadar": "Radar",
+    "ctaAbout": "About",
+    "renameLink": "Why Clawdbot became Moltbot",
+    "snapshotTag": "Signal Snapshot",
+    "updatedLabel": "Updated",
+    "msiGuidanceLabel": "MSI Range Guidance",
+    "tiers": {
+      "stable": "Stable",
+      "risky": "Risky",
+      "unstable": "Unstable"
+    },
+    "modules": [
+      {
+        "title": "Skills Dashboard",
+        "desc": "Sort by MSI and scan tier posture at a glance.",
+        "cta": "Explore skills"
+      },
+      {
+        "title": "Reliability Radar(TM)",
+        "desc": "Track elevated risk signals and configuration instability notes.",
+        "cta": "View radar"
+      },
+      {
+        "title": "Methodology",
+        "desc": "Neutral explanations of how signals are compiled.",
+        "cta": "Read approach"
+      }
+    ]
+  },
+  "skills": {
+    "metaTitle": "Molthub.bot - Moltbot Skills Dashboard & MSI(TM) Scores",
+    "metaDescription": "Browse Moltbot skills with MSI(TM) scores, tiers, and operator notes. Search by name, sort by MSI, and scan stability signals at a glance. Updated weekly.",
+    "keywords": [
+      "Moltbot skills dashboard",
+      "Moltbot MSI scores",
+      "Moltbot skill stability",
+      "Moltbot tiers",
+      "Moltbot reliability index"
+    ],
+    "title": "Moltbot Skills Dashboard",
+    "summary": "Search Moltbot skills by name, then sort by MSI to review current reliability posture.",
+    "summary2": "This view summarizes community signals, tier posture, and recent stability notes for Moltbot skills.",
+    "searchPlaceholder": "Search skills",
+    "sortHigh": "Sort: MSI High -> Low",
+    "sortLow": "Sort: MSI Low -> High",
+    "columns": {
+      "name": "Name",
+      "msi": "MSI",
+      "tier": "Tier",
+      "notes": "Notes",
+      "lastUpdate": "Last Update"
+    },
+    "empty": "No skills match the current search."
+  },
+  "radar": {
+    "metaTitle": "Molthub.bot - Moltbot Reliability Radar & Risk Signals",
+    "metaDescription": "Reliability Radar(TM) highlights elevated risk, degraded behavior, and configuration sensitivity for Moltbot skills. Review affected skills and severity.",
+    "keywords": [
+      "Moltbot reliability radar",
+      "Moltbot risk signals",
+      "Moltbot degraded behavior",
+      "Moltbot configuration stability",
+      "Moltbot reliability briefs"
+    ],
+    "tag": "Reliability Radar(TM)",
+    "title": "Moltbot Reliability Radar",
+    "intro": "Neutral summaries of elevated risk, instability, and configuration signals for Moltbot skills.",
+    "support": "Use these briefs to track reliability posture changes and prioritize validation.",
+    "updatedLabel": "Updated",
+    "sourceLabel": "Source link"
+  },
+  "about": {
+    "metaTitle": "Molthub.bot - Moltbot Methodology & Neutral Signals",
+    "metaDescription": "Understand Molthub.bot's neutral methodology for Moltbot reliability signals, covering MSI(TM) tiers, evidence sources, and update cadence. Descriptive only.",
+    "keywords": [
+      "Moltbot methodology",
+      "Moltbot reliability model",
+      "Moltbot MSI definition",
+      "Moltbot neutral signals",
+      "Moltbot data sources"
+    ],
+    "tag": "About",
+    "title": "Moltbot Methodology",
+    "intro": "Molthub.bot is a non-official, community-driven reliability signal layer for Moltbot skills. The goal is to document stability, survivability, and viability signals in a neutral, engineering-first tone.",
+    "scopeTitle": "Signal Scope",
+    "scopePara1": "Signals are compiled from user reports, reproducible setups, and operator notes. We focus on behavioral consistency, configuration sensitivity, and environment variance.",
+    "scopePara2": "The content is descriptive only. It does not prescribe or restrict usage decisions.",
+    "msiTitle": "MSI Tiers",
+    "msiPara1": "MSI is presented as a single score for quick scanning. Tier labels indicate relative stability at the time of the latest update.",
+    "msiPara2": "A skill can move between Stable, Risky, and Unstable tiers as configuration, environment, or implementation details change.",
+    "radarTitle": "Reliability Radar(TM)",
+    "radarPara": "Radar entries highlight elevated risk or degraded behavior when specific conditions are observed. Each entry lists affected skills and the latest update time.",
+    "disclaimerTitle": "Disclaimer",
+    "disclaimerPara": "Molthub.bot does not provide warranties. The signals may be incomplete or become unstable as upstream changes occur. Validate in your own environment before critical use."
+  },
+  "rename": {
+    "metaTitle": "Molthub.bot - Why Clawdbot Became Moltbot",
+    "metaDescription": "Explanation of why Clawdbot was renamed to Moltbot, including naming alignment, clarity, and long-term viability. Neutral, engineering-first context.",
+    "keywords": [
+      "Clawdbot rename",
+      "Moltbot rename",
+      "Clawdbot to Moltbot",
+      "Moltbot naming",
+      "Moltbot identity"
+    ],
+    "tag": "Rename Note",
+    "title": "Why Clawdbot Became Moltbot",
+    "intro": "This note documents the rename from Clawdbot to Moltbot in a neutral, engineering-first tone. It is descriptive only.",
+    "primaryTitle": "Primary reasons",
+    "primaryReasons": [
+      "Alignment: the new name matches the Moltbot skill ecosystem naming.",
+      "Clarity: reduced ambiguity in documentation, URLs, and references.",
+      "Viability: a simpler name improves long-term consistency and recall."
+    ],
+    "impactTitle": "Operational impact",
+    "impactItems": [
+      "All reliability signals continue under the same neutral methodology.",
+      "Data sources remain local JSON, unchanged in structure.",
+      "Legacy references can be mapped to the new name without drift."
+    ],
+    "timelineTitle": "Timeline",
+    "timelinePara": "The rename is effective as of 2026-01-29. Earlier mentions of Clawdbot should be considered equivalent to Moltbot for documentation and signal tracking purposes.",
+    "terminologyTitle": "Terminology",
+    "terminologyPara": "\"Clawdbot\" is now a legacy label. \"Moltbot\" is the active name used across all reliability, stability, survivability, and viability signals."
+  }
+}

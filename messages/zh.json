@@ -1,0 +1,151 @@
+{
+  "nav": {
+    "skills": "技能",
+    "radar": "雷达",
+    "about": "关于"
+  },
+  "footer": {
+    "line1": "面向 Moltbot skills 的非官方可靠性信号层。",
+    "line2": "MSI 与 Radar 仅为描述性信息，非指令性结论。"
+  },
+  "home": {
+    "metaTitle": "Molthub.bot - Moltbot 可靠性信号与 MSI(TM) 评级",
+    "metaDescription": "追踪 Moltbot skills 的 reliability signal 与 MSI(TM) 评级，查看 stability, survivability 与 viability 备注，发布前先核对。",
+    "keywords": [
+      "Moltbot 可靠性",
+      "Moltbot MSI",
+      "Moltbot reliability signals",
+      "Moltbot skills",
+      "Molthub.bot"
+    ],
+    "heroTag": "社区信号层",
+    "title": "Molthub.bot - Moltbot 可靠性信号",
+    "subtitle": "面向 Moltbot Skills 的社区可靠性信号",
+    "slogan": "发布前先检查 MSI(TM)。",
+    "ctaSkills": "技能",
+    "ctaRadar": "雷达",
+    "ctaAbout": "方法",
+    "renameLink": "为何 Clawdbot 改名为 Moltbot",
+    "snapshotTag": "信号快照",
+    "updatedLabel": "更新",
+    "msiGuidanceLabel": "MSI 区间",
+    "tiers": {
+      "stable": "Stable",
+      "risky": "Risky",
+      "unstable": "Unstable"
+    },
+    "modules": [
+      {
+        "title": "技能看板",
+        "desc": "按 MSI 排序，快速扫过 tier 状态。",
+        "cta": "查看技能"
+      },
+      {
+        "title": "Reliability Radar(TM)",
+        "desc": "跟踪 elevated risk 与配置不稳定信号。",
+        "cta": "查看雷达"
+      },
+      {
+        "title": "方法论",
+        "desc": "中立说明信号如何汇总。",
+        "cta": "阅读方法"
+      }
+    ]
+  },
+  "skills": {
+    "metaTitle": "Molthub.bot - Moltbot 技能看板与 MSI(TM) 分数",
+    "metaDescription": "浏览 Moltbot 技能的 MSI(TM) 分数、tier 与备注。按名称搜索、按 MSI 排序，快速扫描稳定性信号。",
+    "keywords": [
+      "Moltbot 技能看板",
+      "Moltbot MSI 分数",
+      "Moltbot 稳定性",
+      "Moltbot tiers",
+      "Moltbot reliability index"
+    ],
+    "title": "Moltbot 技能看板",
+    "summary": "按名称搜索 Moltbot 技能，再按 MSI 排序以查看当前 reliability 状态。",
+    "summary2": "此视图汇总社区信号、tier 状态与近期稳定性备注。",
+    "searchPlaceholder": "搜索技能",
+    "sortHigh": "排序: MSI 高 -> 低",
+    "sortLow": "排序: MSI 低 -> 高",
+    "columns": {
+      "name": "名称",
+      "msi": "MSI",
+      "tier": "Tier",
+      "notes": "备注",
+      "lastUpdate": "最近更新"
+    },
+    "empty": "没有匹配当前搜索的技能。"
+  },
+  "radar": {
+    "metaTitle": "Molthub.bot - Moltbot Reliability Radar 与风险信号",
+    "metaDescription": "Reliability Radar(TM) 标注 Moltbot 技能的 elevated risk、degraded 行为与配置敏感性，便于审查。",
+    "keywords": [
+      "Moltbot 可靠性雷达",
+      "Moltbot 风险信号",
+      "Moltbot degraded 行为",
+      "Moltbot 配置稳定性",
+      "Moltbot 可靠性简报"
+    ],
+    "tag": "Reliability Radar(TM)",
+    "title": "Moltbot Reliability Radar",
+    "intro": "中立汇总 elevated risk、instability 与配置信号。",
+    "support": "用于跟踪 reliability 状态变化并安排验证。",
+    "updatedLabel": "更新",
+    "sourceLabel": "来源链接"
+  },
+  "about": {
+    "metaTitle": "Molthub.bot - Moltbot 方法论与中立信号",
+    "metaDescription": "了解 Molthub.bot 的中立方法论，涵盖 MSI(TM) 评级、证据来源与更新节奏。",
+    "keywords": [
+      "Moltbot 方法论",
+      "Moltbot reliability 模型",
+      "Moltbot MSI 定义",
+      "Moltbot 中立信号",
+      "Moltbot 数据来源"
+    ],
+    "tag": "关于",
+    "title": "Moltbot 方法论",
+    "intro": "Molthub.bot 是面向 Moltbot skills 的非官方可靠性信号层，目标是以中立工程化语气记录 stability, survivability 与 viability 信号。",
+    "scopeTitle": "信号范围",
+    "scopePara1": "信号来自用户反馈、可复现实验与运营记录，关注行为一致性、配置敏感度与环境差异。",
+    "scopePara2": "内容仅为描述性信息，不构成使用限制。",
+    "msiTitle": "MSI Tiers",
+    "msiPara1": "MSI 以单一分数呈现，便于快速扫描。Tier 标签代表最近一次更新时的相对稳定性。",
+    "msiPara2": "技能可因配置、环境或实现变化在 Stable、Risky 与 Unstable 间移动。",
+    "radarTitle": "Reliability Radar(TM)",
+    "radarPara": "Radar 条目在特定条件下标注 elevated risk 或 degraded 行为，并列出受影响技能与更新时间。",
+    "disclaimerTitle": "免责声明",
+    "disclaimerPara": "Molthub.bot 不提供保证。信号可能不完整，也可能因上游变化而变得 unstable，请在自身环境验证。"
+  },
+  "rename": {
+    "metaTitle": "Molthub.bot - 为什么 Clawdbot 改名为 Moltbot",
+    "metaDescription": "说明 Clawdbot 改名为 Moltbot 的原因，包括命名对齐、清晰度与长期可行性。",
+    "keywords": [
+      "Clawdbot 改名",
+      "Moltbot 改名",
+      "Clawdbot to Moltbot",
+      "Moltbot 命名",
+      "Moltbot 身份"
+    ],
+    "tag": "改名说明",
+    "title": "为什么 Clawdbot 改名为 Moltbot",
+    "intro": "本说明以中立工程化语气记录从 Clawdbot 到 Moltbot 的改名。",
+    "primaryTitle": "主要原因",
+    "primaryReasons": [
+      "对齐: 新名称与 Moltbot 技能生态命名一致。",
+      "清晰: 降低文档、URL 与引用中的歧义。",
+      "可行性: 更简洁的名称有利于长期一致性与记忆。"
+    ],
+    "impactTitle": "运行影响",
+    "impactItems": [
+      "可靠性信号仍按原有中立方法论持续发布。",
+      "数据来源仍为本地 JSON，结构不变。",
+      "旧名称可映射为新名称，不引入漂移。"
+    ],
+    "timelineTitle": "时间线",
+    "timelinePara": "改名自 2026-01-29 起生效。此前出现的 Clawdbot 均可视为 Moltbot 的等价表述。",
+    "terminologyTitle": "术语",
+    "terminologyPara": "\"Clawdbot\" 为历史标签，\"Moltbot\" 为当前有效名称，适用于所有 reliability, stability, survivability 与 viability 信号。"
+  }
+}

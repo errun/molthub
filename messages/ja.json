@@ -1,0 +1,151 @@
+{
+  "nav": {
+    "skills": "スキル",
+    "radar": "レーダー",
+    "about": "概要"
+  },
+  "footer": {
+    "line1": "Moltbot skills 向けの非公式 reliability signal layer。",
+    "line2": "MSI と Radar は記述的であり、指示ではありません。"
+  },
+  "home": {
+    "metaTitle": "Molthub.bot - Moltbot 信頼性シグナルと MSI(TM) ティア",
+    "metaDescription": "Moltbot skills の reliability signal と MSI(TM) ティアを追跡し、stability, survivability, viability の注記を確認。出荷前に確認。",
+    "keywords": [
+      "Moltbot 信頼性",
+      "Moltbot MSI",
+      "Moltbot reliability signals",
+      "Moltbot skills",
+      "Molthub.bot"
+    ],
+    "heroTag": "コミュニティ信号レイヤー",
+    "title": "Molthub.bot - Moltbot 信頼性シグナル",
+    "subtitle": "Moltbot Skills のためのコミュニティ信頼性シグナル",
+    "slogan": "出荷前に MSI(TM) を確認。",
+    "ctaSkills": "スキル",
+    "ctaRadar": "レーダー",
+    "ctaAbout": "方法",
+    "renameLink": "Clawdbot が Moltbot になった理由",
+    "snapshotTag": "信号スナップショット",
+    "updatedLabel": "更新",
+    "msiGuidanceLabel": "MSI 範囲",
+    "tiers": {
+      "stable": "Stable",
+      "risky": "Risky",
+      "unstable": "Unstable"
+    },
+    "modules": [
+      {
+        "title": "スキルダッシュボード",
+        "desc": "MSI で並べ替え、ティア状況を素早く確認。",
+        "cta": "スキルを見る"
+      },
+      {
+        "title": "Reliability Radar(TM)",
+        "desc": "elevated risk と設定不安定シグナルを追跡。",
+        "cta": "レーダーを見る"
+      },
+      {
+        "title": "方法論",
+        "desc": "シグナルの集計方法を中立に説明。",
+        "cta": "方法を読む"
+      }
+    ]
+  },
+  "skills": {
+    "metaTitle": "Molthub.bot - Moltbot スキルダッシュボードと MSI(TM) スコア",
+    "metaDescription": "Moltbot スキルの MSI(TM) スコア、ティア、注記を確認。名称検索と MSI ソートで安定性シグナルを確認。",
+    "keywords": [
+      "Moltbot スキルダッシュボード",
+      "Moltbot MSI スコア",
+      "Moltbot スキル安定性",
+      "Moltbot tiers",
+      "Moltbot reliability index"
+    ],
+    "title": "Moltbot スキルダッシュボード",
+    "summary": "名前で検索し、MSI で並べ替えて現在の reliability 状態を確認。",
+    "summary2": "このビューはコミュニティ信号、ティア、最新の安定性注記をまとめます。",
+    "searchPlaceholder": "スキルを検索",
+    "sortHigh": "並べ替え: MSI 高 -> 低",
+    "sortLow": "並べ替え: MSI 低 -> 高",
+    "columns": {
+      "name": "名称",
+      "msi": "MSI",
+      "tier": "ティア",
+      "notes": "注記",
+      "lastUpdate": "最終更新"
+    },
+    "empty": "一致するスキルがありません。"
+  },
+  "radar": {
+    "metaTitle": "Molthub.bot - Moltbot Reliability Radar とリスク信号",
+    "metaDescription": "Reliability Radar(TM) は Moltbot スキルの elevated risk、degraded 挙動、設定感度を示します。",
+    "keywords": [
+      "Moltbot reliability radar",
+      "Moltbot risk signals",
+      "Moltbot degraded behavior",
+      "Moltbot configuration stability",
+      "Moltbot reliability briefs"
+    ],
+    "tag": "Reliability Radar(TM)",
+    "title": "Moltbot Reliability Radar",
+    "intro": "elevated risk、instability、設定シグナルを中立に要約します。",
+    "support": "信頼性の状態変化を追跡し、検証の優先度を決めるために使用します。",
+    "updatedLabel": "更新",
+    "sourceLabel": "ソースリンク"
+  },
+  "about": {
+    "metaTitle": "Molthub.bot - Moltbot 方法論と中立シグナル",
+    "metaDescription": "Molthub.bot の中立方法論を説明。MSI(TM) ティア、根拠、更新頻度を含みます。",
+    "keywords": [
+      "Moltbot 方法論",
+      "Moltbot reliability モデル",
+      "Moltbot MSI 定義",
+      "Moltbot 中立シグナル",
+      "Moltbot データソース"
+    ],
+    "tag": "About",
+    "title": "Moltbot 方法論",
+    "intro": "Molthub.bot は Moltbot skills 向けの非公式 reliability signal layer です。stability, survivability, viability シグナルを中立に記録します。",
+    "scopeTitle": "シグナル範囲",
+    "scopePara1": "シグナルはユーザー報告、再現可能な環境、運用メモから収集されます。行動の一貫性、設定感度、環境差異に注目します。",
+    "scopePara2": "内容は記述のみで、利用判断を制限するものではありません。",
+    "msiTitle": "MSI ティア",
+    "msiPara1": "MSI は単一スコアで表示され、最新更新時点の相対的な安定性を示します。",
+    "msiPara2": "設定、環境、実装の変化により Stable / Risky / Unstable を移動します。",
+    "radarTitle": "Reliability Radar(TM)",
+    "radarPara": "Radar の項目は特定条件下で elevated risk または degraded 挙動を示し、影響スキルと更新日を掲載します。",
+    "disclaimerTitle": "免責",
+    "disclaimerPara": "Molthub.bot は保証を提供しません。信号は不完全であったり、上流変更で unstable になる可能性があります。必ず自環境で検証してください。"
+  },
+  "rename": {
+    "metaTitle": "Molthub.bot - Clawdbot が Moltbot になった理由",
+    "metaDescription": "Clawdbot を Moltbot に改名した理由を説明します。命名の整合、明確さ、長期 viability を含みます。",
+    "keywords": [
+      "Clawdbot rename",
+      "Moltbot rename",
+      "Clawdbot to Moltbot",
+      "Moltbot naming",
+      "Moltbot identity"
+    ],
+    "tag": "改名ノート",
+    "title": "Clawdbot が Moltbot になった理由",
+    "intro": "Clawdbot から Moltbot への改名を中立かつ工程的に記録します。",
+    "primaryTitle": "主な理由",
+    "primaryReasons": [
+      "整合: Moltbot skills エコシステムの命名に合わせるため。",
+      "明確さ: ドキュメント、URL、参照の曖昧さを減らすため。",
+      "Viability: 簡潔な名称で長期的な一貫性と記憶性を高めるため。"
+    ],
+    "impactTitle": "運用への影響",
+    "impactItems": [
+      "信頼性シグナルは同じ中立方法論で継続します。",
+      "データソースはローカル JSON のまま、構造変更はありません。",
+      "旧名称は新名称にマップでき、ドリフトを起こしません。"
+    ],
+    "timelineTitle": "タイムライン",
+    "timelinePara": "改名は 2026-01-29 に有効化されました。Clawdbot の過去記述は Moltbot と同義です。",
+    "terminologyTitle": "用語",
+    "terminologyPara": "\"Clawdbot\" は旧ラベル、\"Moltbot\" が現行名称です。reliability, stability, survivability, viability シグナルに適用されます。"
+  }
+}

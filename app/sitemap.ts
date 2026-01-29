@@ -1,12 +1,13 @@
 import type { MetadataRoute } from "next";
 
 import { getBaseUrl } from "@/lib/site-url";
+import { locales } from "@/lib/i18n";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = getBaseUrl();
   const lastModified = new Date();
 
-  return [
+  const baseEntries = [
     {
       url: `${baseUrl}/`,
       lastModified,
@@ -38,4 +39,39 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.5
     }
   ];
+
+  const localeEntries = locales.flatMap((locale) => [
+    {
+      url: `${baseUrl}/${locale}`,
+      lastModified,
+      changeFrequency: "weekly",
+      priority: 0.7
+    },
+    {
+      url: `${baseUrl}/${locale}/skills`,
+      lastModified,
+      changeFrequency: "weekly",
+      priority: 0.6
+    },
+    {
+      url: `${baseUrl}/${locale}/radar`,
+      lastModified,
+      changeFrequency: "weekly",
+      priority: 0.5
+    },
+    {
+      url: `${baseUrl}/${locale}/about`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.4
+    },
+    {
+      url: `${baseUrl}/${locale}/rename`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.3
+    }
+  ]);
+
+  return [...baseEntries, ...localeEntries];
 }

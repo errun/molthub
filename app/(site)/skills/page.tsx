@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import SkillsClient, { type Skill } from "@/components/SkillsClient";
 import JsonLd from "@/components/JsonLd";
 import skillsDataRaw from "@/data/skills.json";
+import { getDictionary } from "@/lib/dictionaries";
 import { getBaseUrl } from "@/lib/site-url";
 
 const baseUrl = getBaseUrl();
@@ -44,7 +45,8 @@ export const metadata: Metadata = {
   ]
 };
 
-export default function SkillsPage() {
+export default async function SkillsPage() {
+  const dict = await getDictionary("en");
   const skillsData = skillsDataRaw as Skill[];
 
   return (
@@ -65,7 +67,7 @@ export default function SkillsPage() {
           inLanguage: "en"
         }}
       />
-      <SkillsClient skills={skillsData} />
+      <SkillsClient skills={skillsData} labels={dict.skills} />
     </section>
   );
 }
