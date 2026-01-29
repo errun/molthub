@@ -2,7 +2,14 @@
   "nav": {
     "skills": "Skills",
     "radar": "Radar",
-    "about": "About"
+    "about": "About",
+    "language": "Lang",
+    "languageOptions": {
+      "en": "English",
+      "zh": "中文",
+      "ja": "日本語",
+      "ko": "한국어"
+    }
   },
   "footer": {
     "line1": "Non-official reliability signal layer for Moltbot skills.",

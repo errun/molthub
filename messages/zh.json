@@ -1,151 +1,158 @@
 {
-  "nav": {
-    "skills": "¼¼ÄÜ",
-    "radar": "À×´ï",
-    "about": "¹ØÓÚ"
-  },
-  "footer": {
-    "line1": "ÃæÏò Moltbot skills µÄ·Ç¹Ù·½¿É¿¿ĞÔĞÅºÅ²ã¡£",
-    "line2": "MSI Óë Radar ½öÎªÃèÊöĞÔĞÅÏ¢£¬·ÇÖ¸ÁîĞÔ½áÂÛ¡£"
-  },
-  "home": {
-    "metaTitle": "Molthub.bot - Moltbot ¿É¿¿ĞÔĞÅºÅÓë MSI(TM) ÆÀ¼¶",
-    "metaDescription": "×·×Ù Moltbot skills µÄ reliability signal Óë MSI(TM) ÆÀ¼¶£¬²é¿´ stability, survivability Óë viability ±¸×¢£¬·¢²¼Ç°ÏÈºË¶Ô¡£",
-    "keywords": [
-      "Moltbot ¿É¿¿ĞÔ",
-      "Moltbot MSI",
-      "Moltbot reliability signals",
-      "Moltbot skills",
-      "Molthub.bot"
-    ],
-    "heroTag": "ÉçÇøĞÅºÅ²ã",
-    "title": "Molthub.bot - Moltbot ¿É¿¿ĞÔĞÅºÅ",
-    "subtitle": "ÃæÏò Moltbot Skills µÄÉçÇø¿É¿¿ĞÔĞÅºÅ",
-    "slogan": "·¢²¼Ç°ÏÈ¼ì²é MSI(TM)¡£",
-    "ctaSkills": "¼¼ÄÜ",
-    "ctaRadar": "À×´ï",
-    "ctaAbout": "·½·¨",
-    "renameLink": "ÎªºÎ Clawdbot ¸ÄÃûÎª Moltbot",
-    "snapshotTag": "ĞÅºÅ¿ìÕÕ",
-    "updatedLabel": "¸üĞÂ",
-    "msiGuidanceLabel": "MSI Çø¼ä",
-    "tiers": {
-      "stable": "Stable",
-      "risky": "Risky",
-      "unstable": "Unstable"
-    },
-    "modules": [
-      {
-        "title": "¼¼ÄÜ¿´°å",
-        "desc": "°´ MSI ÅÅĞò£¬¿ìËÙÉ¨¹ı tier ×´Ì¬¡£",
-        "cta": "²é¿´¼¼ÄÜ"
-      },
-      {
-        "title": "Reliability Radar(TM)",
-        "desc": "¸ú×Ù elevated risk ÓëÅäÖÃ²»ÎÈ¶¨ĞÅºÅ¡£",
-        "cta": "²é¿´À×´ï"
-      },
-      {
-        "title": "·½·¨ÂÛ",
-        "desc": "ÖĞÁ¢ËµÃ÷ĞÅºÅÈçºÎ»ã×Ü¡£",
-        "cta": "ÔÄ¶Á·½·¨"
-      }
-    ]
-  },
-  "skills": {
-    "metaTitle": "Molthub.bot - Moltbot ¼¼ÄÜ¿´°åÓë MSI(TM) ·ÖÊı",
-    "metaDescription": "ä¯ÀÀ Moltbot ¼¼ÄÜµÄ MSI(TM) ·ÖÊı¡¢tier Óë±¸×¢¡£°´Ãû³ÆËÑË÷¡¢°´ MSI ÅÅĞò£¬¿ìËÙÉ¨ÃèÎÈ¶¨ĞÔĞÅºÅ¡£",
-    "keywords": [
-      "Moltbot ¼¼ÄÜ¿´°å",
-      "Moltbot MSI ·ÖÊı",
-      "Moltbot ÎÈ¶¨ĞÔ",
-      "Moltbot tiers",
-      "Moltbot reliability index"
-    ],
-    "title": "Moltbot ¼¼ÄÜ¿´°å",
-    "summary": "°´Ãû³ÆËÑË÷ Moltbot ¼¼ÄÜ£¬ÔÙ°´ MSI ÅÅĞòÒÔ²é¿´µ±Ç° reliability ×´Ì¬¡£",
-    "summary2": "´ËÊÓÍ¼»ã×ÜÉçÇøĞÅºÅ¡¢tier ×´Ì¬Óë½üÆÚÎÈ¶¨ĞÔ±¸×¢¡£",
-    "searchPlaceholder": "ËÑË÷¼¼ÄÜ",
-    "sortHigh": "ÅÅĞò: MSI ¸ß -> µÍ",
-    "sortLow": "ÅÅĞò: MSI µÍ -> ¸ß",
-    "columns": {
-      "name": "Ãû³Æ",
-      "msi": "MSI",
-      "tier": "Tier",
-      "notes": "±¸×¢",
-      "lastUpdate": "×î½ü¸üĞÂ"
-    },
-    "empty": "Ã»ÓĞÆ¥Åäµ±Ç°ËÑË÷µÄ¼¼ÄÜ¡£"
-  },
-  "radar": {
-    "metaTitle": "Molthub.bot - Moltbot Reliability Radar Óë·çÏÕĞÅºÅ",
-    "metaDescription": "Reliability Radar(TM) ±ê×¢ Moltbot ¼¼ÄÜµÄ elevated risk¡¢degraded ĞĞÎªÓëÅäÖÃÃô¸ĞĞÔ£¬±ãÓÚÉó²é¡£",
-    "keywords": [
-      "Moltbot ¿É¿¿ĞÔÀ×´ï",
-      "Moltbot ·çÏÕĞÅºÅ",
-      "Moltbot degraded ĞĞÎª",
-      "Moltbot ÅäÖÃÎÈ¶¨ĞÔ",
-      "Moltbot ¿É¿¿ĞÔ¼ò±¨"
-    ],
-    "tag": "Reliability Radar(TM)",
-    "title": "Moltbot Reliability Radar",
-    "intro": "ÖĞÁ¢»ã×Ü elevated risk¡¢instability ÓëÅäÖÃĞÅºÅ¡£",
-    "support": "ÓÃÓÚ¸ú×Ù reliability ×´Ì¬±ä»¯²¢°²ÅÅÑéÖ¤¡£",
-    "updatedLabel": "¸üĞÂ",
-    "sourceLabel": "À´Ô´Á´½Ó"
-  },
-  "about": {
-    "metaTitle": "Molthub.bot - Moltbot ·½·¨ÂÛÓëÖĞÁ¢ĞÅºÅ",
-    "metaDescription": "ÁË½â Molthub.bot µÄÖĞÁ¢·½·¨ÂÛ£¬º­¸Ç MSI(TM) ÆÀ¼¶¡¢Ö¤¾İÀ´Ô´Óë¸üĞÂ½Ú×à¡£",
-    "keywords": [
-      "Moltbot ·½·¨ÂÛ",
-      "Moltbot reliability Ä£ĞÍ",
-      "Moltbot MSI ¶¨Òå",
-      "Moltbot ÖĞÁ¢ĞÅºÅ",
-      "Moltbot Êı¾İÀ´Ô´"
-    ],
-    "tag": "¹ØÓÚ",
-    "title": "Moltbot ·½·¨ÂÛ",
-    "intro": "Molthub.bot ÊÇÃæÏò Moltbot skills µÄ·Ç¹Ù·½¿É¿¿ĞÔĞÅºÅ²ã£¬Ä¿±êÊÇÒÔÖĞÁ¢¹¤³Ì»¯ÓïÆø¼ÇÂ¼ stability, survivability Óë viability ĞÅºÅ¡£",
-    "scopeTitle": "ĞÅºÅ·¶Î§",
-    "scopePara1": "ĞÅºÅÀ´×ÔÓÃ»§·´À¡¡¢¿É¸´ÏÖÊµÑéÓëÔËÓª¼ÇÂ¼£¬¹Ø×¢ĞĞÎªÒ»ÖÂĞÔ¡¢ÅäÖÃÃô¸Ğ¶ÈÓë»·¾³²îÒì¡£",
-    "scopePara2": "ÄÚÈİ½öÎªÃèÊöĞÔĞÅÏ¢£¬²»¹¹³ÉÊ¹ÓÃÏŞÖÆ¡£",
-    "msiTitle": "MSI Tiers",
-    "msiPara1": "MSI ÒÔµ¥Ò»·ÖÊı³ÊÏÖ£¬±ãÓÚ¿ìËÙÉ¨Ãè¡£Tier ±êÇ©´ú±í×î½üÒ»´Î¸üĞÂÊ±µÄÏà¶ÔÎÈ¶¨ĞÔ¡£",
-    "msiPara2": "¼¼ÄÜ¿ÉÒòÅäÖÃ¡¢»·¾³»òÊµÏÖ±ä»¯ÔÚ Stable¡¢Risky Óë Unstable ¼äÒÆ¶¯¡£",
-    "radarTitle": "Reliability Radar(TM)",
-    "radarPara": "Radar ÌõÄ¿ÔÚÌØ¶¨Ìõ¼şÏÂ±ê×¢ elevated risk »ò degraded ĞĞÎª£¬²¢ÁĞ³öÊÜÓ°Ïì¼¼ÄÜÓë¸üĞÂÊ±¼ä¡£",
-    "disclaimerTitle": "ÃâÔğÉùÃ÷",
-    "disclaimerPara": "Molthub.bot ²»Ìá¹©±£Ö¤¡£ĞÅºÅ¿ÉÄÜ²»ÍêÕû£¬Ò²¿ÉÄÜÒòÉÏÓÎ±ä»¯¶ø±äµÃ unstable£¬ÇëÔÚ×ÔÉí»·¾³ÑéÖ¤¡£"
-  },
-  "rename": {
-    "metaTitle": "Molthub.bot - ÎªÊ²Ã´ Clawdbot ¸ÄÃûÎª Moltbot",
-    "metaDescription": "ËµÃ÷ Clawdbot ¸ÄÃûÎª Moltbot µÄÔ­Òò£¬°üÀ¨ÃüÃû¶ÔÆë¡¢ÇåÎú¶ÈÓë³¤ÆÚ¿ÉĞĞĞÔ¡£",
-    "keywords": [
-      "Clawdbot ¸ÄÃû",
-      "Moltbot ¸ÄÃû",
-      "Clawdbot to Moltbot",
-      "Moltbot ÃüÃû",
-      "Moltbot Éí·İ"
-    ],
-    "tag": "¸ÄÃûËµÃ÷",
-    "title": "ÎªÊ²Ã´ Clawdbot ¸ÄÃûÎª Moltbot",
-    "intro": "±¾ËµÃ÷ÒÔÖĞÁ¢¹¤³Ì»¯ÓïÆø¼ÇÂ¼´Ó Clawdbot µ½ Moltbot µÄ¸ÄÃû¡£",
-    "primaryTitle": "Ö÷ÒªÔ­Òò",
-    "primaryReasons": [
-      "¶ÔÆë: ĞÂÃû³ÆÓë Moltbot ¼¼ÄÜÉúÌ¬ÃüÃûÒ»ÖÂ¡£",
-      "ÇåÎú: ½µµÍÎÄµµ¡¢URL ÓëÒıÓÃÖĞµÄÆçÒå¡£",
-      "¿ÉĞĞĞÔ: ¸ü¼ò½àµÄÃû³ÆÓĞÀûÓÚ³¤ÆÚÒ»ÖÂĞÔÓë¼ÇÒä¡£"
-    ],
-    "impactTitle": "ÔËĞĞÓ°Ïì",
-    "impactItems": [
-      "¿É¿¿ĞÔĞÅºÅÈÔ°´Ô­ÓĞÖĞÁ¢·½·¨ÂÛ³ÖĞø·¢²¼¡£",
-      "Êı¾İÀ´Ô´ÈÔÎª±¾µØ JSON£¬½á¹¹²»±ä¡£",
-      "¾ÉÃû³Æ¿ÉÓ³ÉäÎªĞÂÃû³Æ£¬²»ÒıÈëÆ¯ÒÆ¡£"
-    ],
-    "timelineTitle": "Ê±¼äÏß",
-    "timelinePara": "¸ÄÃû×Ô 2026-01-29 ÆğÉúĞ§¡£´ËÇ°³öÏÖµÄ Clawdbot ¾ù¿ÉÊÓÎª Moltbot µÄµÈ¼Û±íÊö¡£",
-    "terminologyTitle": "ÊõÓï",
-    "terminologyPara": "\"Clawdbot\" ÎªÀúÊ·±êÇ©£¬\"Moltbot\" Îªµ±Ç°ÓĞĞ§Ãû³Æ£¬ÊÊÓÃÓÚËùÓĞ reliability, stability, survivability Óë viability ĞÅºÅ¡£"
-  }
+    "nav":  {
+                "skills":  "æŠ€èƒ½",
+                "radar":  "é›·è¾¾",
+                "about":  "å…³äº",
+                "language":  "è¯­è¨€",
+                "languageOptions":  {
+                                        "zh":  "ä¸­æ–‡",
+                                        "en":  "English",
+                                        "ja":  "æ—¥æœ¬èª",
+                                        "ko":  "í•œêµ­ì–´"
+                                    }
+            },
+    "footer":  {
+                   "line1":  "é¢å‘ Moltbot skills çš„éå®˜æ–¹å¯é æ€§ä¿¡å·å±‚ã€‚",
+                   "line2":  "MSI ä¸ Radar ä»…ä¸ºæè¿°æ€§ä¿¡æ¯ï¼ŒéæŒ‡ä»¤æ€§ç»“è®ºã€‚"
+               },
+    "home":  {
+                 "metaTitle":  "Molthub.bot - Moltbot å¯é æ€§ä¿¡å·ä¸ MSI(TM) è¯„çº§",
+                 "metaDescription":  "è¿½è¸ª Moltbot skills çš„ reliability signal ä¸ MSI(TM) è¯„çº§ï¼ŒæŸ¥çœ‹ stability, survivability ä¸ viability å¤‡æ³¨ï¼Œå‘å¸ƒå‰å…ˆæ ¸å¯¹ã€‚",
+                 "keywords":  [
+                                  "Moltbot å¯é æ€§",
+                                  "Moltbot MSI",
+                                  "Moltbot reliability signals",
+                                  "Moltbot skills",
+                                  "Molthub.bot"
+                              ],
+                 "heroTag":  "ç¤¾åŒºä¿¡å·å±‚",
+                 "title":  "Molthub.bot - Moltbot å¯é æ€§ä¿¡å·",
+                 "subtitle":  "é¢å‘ Moltbot Skills çš„ç¤¾åŒºå¯é æ€§ä¿¡å·",
+                 "slogan":  "å‘å¸ƒå‰å…ˆæ£€æŸ¥ MSI(TM)ã€‚",
+                 "ctaSkills":  "æŠ€èƒ½",
+                 "ctaRadar":  "é›·è¾¾",
+                 "ctaAbout":  "æ–¹æ³•",
+                 "renameLink":  "ä¸ºä½• Clawdbot æ”¹åä¸º Moltbot",
+                 "snapshotTag":  "ä¿¡å·å¿«ç…§",
+                 "updatedLabel":  "æ›´æ–°",
+                 "msiGuidanceLabel":  "MSI åŒºé—´",
+                 "tiers":  {
+                               "stable":  "Stable",
+                               "risky":  "Risky",
+                               "unstable":  "Unstable"
+                           },
+                 "modules":  [
+                                 {
+                                     "title":  "æŠ€èƒ½çœ‹æ¿",
+                                     "desc":  "æŒ‰ MSI æ’åºï¼Œå¿«é€Ÿæ‰«è¿‡ tier çŠ¶æ€ã€‚",
+                                     "cta":  "æŸ¥çœ‹æŠ€èƒ½"
+                                 },
+                                 {
+                                     "title":  "Reliability Radar(TM)",
+                                     "desc":  "è·Ÿè¸ª elevated risk ä¸é…ç½®ä¸ç¨³å®šä¿¡å·ã€‚",
+                                     "cta":  "æŸ¥çœ‹é›·è¾¾"
+                                 },
+                                 {
+                                     "title":  "æ–¹æ³•è®º",
+                                     "desc":  "ä¸­ç«‹è¯´æ˜ä¿¡å·å¦‚ä½•æ±‡æ€»ã€‚",
+                                     "cta":  "é˜…è¯»æ–¹æ³•"
+                                 }
+                             ]
+             },
+    "skills":  {
+                   "metaTitle":  "Molthub.bot - Moltbot æŠ€èƒ½çœ‹æ¿ä¸ MSI(TM) åˆ†æ•°",
+                   "metaDescription":  "æµè§ˆ Moltbot æŠ€èƒ½çš„ MSI(TM) åˆ†æ•°ã€tier ä¸å¤‡æ³¨ã€‚æŒ‰åç§°æœç´¢ã€æŒ‰ MSI æ’åºï¼Œå¿«é€Ÿæ‰«æç¨³å®šæ€§ä¿¡å·ã€‚",
+                   "keywords":  [
+                                    "Moltbot æŠ€èƒ½çœ‹æ¿",
+                                    "Moltbot MSI åˆ†æ•°",
+                                    "Moltbot ç¨³å®šæ€§",
+                                    "Moltbot tiers",
+                                    "Moltbot reliability index"
+                                ],
+                   "title":  "Moltbot æŠ€èƒ½çœ‹æ¿",
+                   "summary":  "æŒ‰åç§°æœç´¢ Moltbot æŠ€èƒ½ï¼Œå†æŒ‰ MSI æ’åºä»¥æŸ¥çœ‹å½“å‰ reliability çŠ¶æ€ã€‚",
+                   "summary2":  "æ­¤è§†å›¾æ±‡æ€»ç¤¾åŒºä¿¡å·ã€tier çŠ¶æ€ä¸è¿‘æœŸç¨³å®šæ€§å¤‡æ³¨ã€‚",
+                   "searchPlaceholder":  "æœç´¢æŠ€èƒ½",
+                   "sortHigh":  "æ’åº: MSI é«˜ -\u003e ä½",
+                   "sortLow":  "æ’åº: MSI ä½ -\u003e é«˜",
+                   "columns":  {
+                                   "name":  "åç§°",
+                                   "msi":  "MSI",
+                                   "tier":  "Tier",
+                                   "notes":  "å¤‡æ³¨",
+                                   "lastUpdate":  "æœ€è¿‘æ›´æ–°"
+                               },
+                   "empty":  "æ²¡æœ‰åŒ¹é…å½“å‰æœç´¢çš„æŠ€èƒ½ã€‚"
+               },
+    "radar":  {
+                  "metaTitle":  "Molthub.bot - Moltbot Reliability Radar ä¸é£é™©ä¿¡å·",
+                  "metaDescription":  "Reliability Radar(TM) æ ‡æ³¨ Moltbot æŠ€èƒ½çš„ elevated riskã€degraded è¡Œä¸ºä¸é…ç½®æ•æ„Ÿæ€§ï¼Œä¾¿äºå®¡æŸ¥ã€‚",
+                  "keywords":  [
+                                   "Moltbot å¯é æ€§é›·è¾¾",
+                                   "Moltbot é£é™©ä¿¡å·",
+                                   "Moltbot degraded è¡Œä¸º",
+                                   "Moltbot é…ç½®ç¨³å®šæ€§",
+                                   "Moltbot å¯é æ€§ç®€æŠ¥"
+                               ],
+                  "tag":  "Reliability Radar(TM)",
+                  "title":  "Moltbot Reliability Radar",
+                  "intro":  "ä¸­ç«‹æ±‡æ€» elevated riskã€instability ä¸é…ç½®ä¿¡å·ã€‚",
+                  "support":  "ç”¨äºè·Ÿè¸ª reliability çŠ¶æ€å˜åŒ–å¹¶å®‰æ’éªŒè¯ã€‚",
+                  "updatedLabel":  "æ›´æ–°",
+                  "sourceLabel":  "æ¥æºé“¾æ¥"
+              },
+    "about":  {
+                  "metaTitle":  "Molthub.bot - Moltbot æ–¹æ³•è®ºä¸ä¸­ç«‹ä¿¡å·",
+                  "metaDescription":  "äº†è§£ Molthub.bot çš„ä¸­ç«‹æ–¹æ³•è®ºï¼Œæ¶µç›– MSI(TM) è¯„çº§ã€è¯æ®æ¥æºä¸æ›´æ–°èŠ‚å¥ã€‚",
+                  "keywords":  [
+                                   "Moltbot æ–¹æ³•è®º",
+                                   "Moltbot reliability æ¨¡å‹",
+                                   "Moltbot MSI å®šä¹‰",
+                                   "Moltbot ä¸­ç«‹ä¿¡å·",
+                                   "Moltbot æ•°æ®æ¥æº"
+                               ],
+                  "tag":  "å…³äº",
+                  "title":  "Moltbot æ–¹æ³•è®º",
+                  "intro":  "Molthub.bot æ˜¯é¢å‘ Moltbot skills çš„éå®˜æ–¹å¯é æ€§ä¿¡å·å±‚ï¼Œç›®æ ‡æ˜¯ä»¥ä¸­ç«‹å·¥ç¨‹åŒ–è¯­æ°”è®°å½• stability, survivability ä¸ viability ä¿¡å·ã€‚",
+                  "scopeTitle":  "ä¿¡å·èŒƒå›´",
+                  "scopePara1":  "ä¿¡å·æ¥è‡ªç”¨æˆ·åé¦ˆã€å¯å¤ç°å®éªŒä¸è¿è¥è®°å½•ï¼Œå…³æ³¨è¡Œä¸ºä¸€è‡´æ€§ã€é…ç½®æ•æ„Ÿåº¦ä¸ç¯å¢ƒå·®å¼‚ã€‚",
+                  "scopePara2":  "å†…å®¹ä»…ä¸ºæè¿°æ€§ä¿¡æ¯ï¼Œä¸æ„æˆä½¿ç”¨é™åˆ¶ã€‚",
+                  "msiTitle":  "MSI Tiers",
+                  "msiPara1":  "MSI ä»¥å•ä¸€åˆ†æ•°å‘ˆç°ï¼Œä¾¿äºå¿«é€Ÿæ‰«æã€‚Tier æ ‡ç­¾ä»£è¡¨æœ€è¿‘ä¸€æ¬¡æ›´æ–°æ—¶çš„ç›¸å¯¹ç¨³å®šæ€§ã€‚",
+                  "msiPara2":  "æŠ€èƒ½å¯å› é…ç½®ã€ç¯å¢ƒæˆ–å®ç°å˜åŒ–åœ¨ Stableã€Risky ä¸ Unstable é—´ç§»åŠ¨ã€‚",
+                  "radarTitle":  "Reliability Radar(TM)",
+                  "radarPara":  "Radar æ¡ç›®åœ¨ç‰¹å®šæ¡ä»¶ä¸‹æ ‡æ³¨ elevated risk æˆ– degraded è¡Œä¸ºï¼Œå¹¶åˆ—å‡ºå—å½±å“æŠ€èƒ½ä¸æ›´æ–°æ—¶é—´ã€‚",
+                  "disclaimerTitle":  "å…è´£å£°æ˜",
+                  "disclaimerPara":  "Molthub.bot ä¸æä¾›ä¿è¯ã€‚ä¿¡å·å¯èƒ½ä¸å®Œæ•´ï¼Œä¹Ÿå¯èƒ½å› ä¸Šæ¸¸å˜åŒ–è€Œå˜å¾— unstableï¼Œè¯·åœ¨è‡ªèº«ç¯å¢ƒéªŒè¯ã€‚"
+              },
+    "rename":  {
+                   "metaTitle":  "Molthub.bot - ä¸ºä»€ä¹ˆ Clawdbot æ”¹åä¸º Moltbot",
+                   "metaDescription":  "è¯´æ˜ Clawdbot æ”¹åä¸º Moltbot çš„åŸå› ï¼ŒåŒ…æ‹¬å‘½åå¯¹é½ã€æ¸…æ™°åº¦ä¸é•¿æœŸå¯è¡Œæ€§ã€‚",
+                   "keywords":  [
+                                    "Clawdbot æ”¹å",
+                                    "Moltbot æ”¹å",
+                                    "Clawdbot to Moltbot",
+                                    "Moltbot å‘½å",
+                                    "Moltbot èº«ä»½"
+                                ],
+                   "tag":  "æ”¹åè¯´æ˜",
+                   "title":  "ä¸ºä»€ä¹ˆ Clawdbot æ”¹åä¸º Moltbot",
+                   "intro":  "æœ¬è¯´æ˜ä»¥ä¸­ç«‹å·¥ç¨‹åŒ–è¯­æ°”è®°å½•ä» Clawdbot åˆ° Moltbot çš„æ”¹åã€‚",
+                   "primaryTitle":  "ä¸»è¦åŸå› ",
+                   "primaryReasons":  [
+                                          "å¯¹é½: æ–°åç§°ä¸ Moltbot æŠ€èƒ½ç”Ÿæ€å‘½åä¸€è‡´ã€‚",
+                                          "æ¸…æ™°: é™ä½æ–‡æ¡£ã€URL ä¸å¼•ç”¨ä¸­çš„æ­§ä¹‰ã€‚",
+                                          "å¯è¡Œæ€§: æ›´ç®€æ´çš„åç§°æœ‰åˆ©äºé•¿æœŸä¸€è‡´æ€§ä¸è®°å¿†ã€‚"
+                                      ],
+                   "impactTitle":  "è¿è¡Œå½±å“",
+                   "impactItems":  [
+                                       "å¯é æ€§ä¿¡å·ä»æŒ‰åŸæœ‰ä¸­ç«‹æ–¹æ³•è®ºæŒç»­å‘å¸ƒã€‚",
+                                       "æ•°æ®æ¥æºä»ä¸ºæœ¬åœ° JSONï¼Œç»“æ„ä¸å˜ã€‚",
+                                       "æ—§åç§°å¯æ˜ å°„ä¸ºæ–°åç§°ï¼Œä¸å¼•å…¥æ¼‚ç§»ã€‚"
+                                   ],
+                   "timelineTitle":  "æ—¶é—´çº¿",
+                   "timelinePara":  "æ”¹åè‡ª 2026-01-29 èµ·ç”Ÿæ•ˆã€‚æ­¤å‰å‡ºç°çš„ Clawdbot å‡å¯è§†ä¸º Moltbot çš„ç­‰ä»·è¡¨è¿°ã€‚",
+                   "terminologyTitle":  "æœ¯è¯­",
+                   "terminologyPara":  "\"Clawdbot\" ä¸ºå†å²æ ‡ç­¾ï¼Œ\"Moltbot\" ä¸ºå½“å‰æœ‰æ•ˆåç§°ï¼Œé€‚ç”¨äºæ‰€æœ‰ reliability, stability, survivability ä¸ viability ä¿¡å·ã€‚"
+               }
 }

@@ -38,9 +38,25 @@ export default async function LocaleLayout({
             <Link className="btn-ghost" href={`${prefix}/radar`}>
               {dict.nav.radar}
             </Link>
-            <Link className="btn-ghost" href={`${prefix}/about`}>
-              {dict.nav.about}
-            </Link>
+            <details className="group relative">
+              <summary className="btn-ghost cursor-pointer list-none text-xs">
+                {dict.nav.language}
+              </summary>
+              <div className="absolute right-0 mt-2 w-40 rounded-xl border border-border bg-black/80 p-2 text-xs text-muted shadow-glow">
+                <Link className="block rounded-lg px-3 py-2 hover:bg-white/10" href="/">
+                  {dict.nav.languageOptions.en}
+                </Link>
+                <Link className="block rounded-lg px-3 py-2 hover:bg-white/10" href="/zh">
+                  {dict.nav.languageOptions.zh}
+                </Link>
+                <Link className="block rounded-lg px-3 py-2 hover:bg-white/10" href="/ja">
+                  {dict.nav.languageOptions.ja}
+                </Link>
+                <Link className="block rounded-lg px-3 py-2 hover:bg-white/10" href="/ko">
+                  {dict.nav.languageOptions.ko}
+                </Link>
+              </div>
+            </details>
           </nav>
         </div>
       </header>
