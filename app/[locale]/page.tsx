@@ -87,6 +87,9 @@ export default async function LocaleHomePage({ params }: PageProps) {
             <p className="text-xl font-semibold md:text-2xl">{dict.home.slogan}</p>
           </div>
           <div className="flex flex-wrap gap-3">
+            <Link className="btn-strong" href={`${prefix}/install-guides`}>
+              {dict.home.ctaInstallGuides}
+            </Link>
             <Link className="btn-strong" href={`${prefix}/skills`}>
               {dict.home.ctaSkills}
             </Link>

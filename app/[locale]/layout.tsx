@@ -38,6 +38,9 @@ export default async function LocaleLayout({
             <Link className="btn-ghost" href={`${prefix}/radar`}>
               {dict.nav.radar}
             </Link>
+            <Link className="btn-ghost" href={`${prefix}/install-guides`}>
+              {dict.nav.installGuides}
+            </Link>
             <details className="group relative">
               <summary className="btn-ghost cursor-pointer list-none text-xs">
                 {dict.nav.language}

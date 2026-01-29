@@ -22,6 +22,9 @@ export default async function SiteLayout({
             <Link className="btn-ghost" href="/radar">
               {dict.nav.radar}
             </Link>
+            <Link className="btn-ghost" href="/install-guides">
+              {dict.nav.installGuides}
+            </Link>
             <details className="group relative">
               <summary className="btn-ghost cursor-pointer list-none text-xs">
                 {dict.nav.language}

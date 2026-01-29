@@ -9,7 +9,8 @@
       "zh": "中文",
       "ja": "日本語",
       "ko": "한국어"
-    }
+    },
+    "installGuides": "Install Guides"
   },
   "footer": {
     "line1": "Non-official reliability signal layer for Moltbot skills.",
@@ -57,7 +58,8 @@
         "desc": "Neutral explanations of how signals are compiled.",
         "cta": "Read approach"
       }
-    ]
+    ],
+    "ctaInstallGuides": "Install Guides (Windows/macOS/Linux)"
   },
   "skills": {
     "metaTitle": "Molthub.bot - Moltbot Skills Dashboard & MSI(TM) Scores",

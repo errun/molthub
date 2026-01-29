@@ -27,6 +27,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8
     },
     {
+      url: `${baseUrl}/install-guides`,
+      lastModified,
+      changeFrequency: "weekly",
+      priority: 0.85
+    },
+    {
       url: `${baseUrl}/about`,
       lastModified,
       changeFrequency: "monthly",
@@ -58,6 +64,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified,
       changeFrequency: "weekly",
       priority: 0.5
+    },
+    {
+      url: `${baseUrl}/${locale}/install-guides`,
+      lastModified,
+      changeFrequency: "weekly",
+      priority: 0.55
     },
     {
       url: `${baseUrl}/${locale}/about`,
