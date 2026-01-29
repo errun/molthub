@@ -77,11 +77,8 @@ export default function HomePage() {
             </p>
           </div>
           <div className="flex flex-wrap gap-3">
-            <Link className="btn-strong" href="/install-guides">
-              Install Guides (Windows/macOS/Linux)
-            </Link>
             <Link className="btn-strong" href="/moltbot-install-guides">
-              Quickstart Guide
+              Install Guides (Windows/macOS/Linux)
             </Link>
             <Link className="btn-strong" href="/skills">
               Skills
