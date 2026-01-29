@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import LanguageSwitcher from "@/components/LanguageSwitcher";
 import { getDictionary } from "@/lib/dictionaries";
 import { isLocale, locales, type Locale } from "@/lib/i18n";
 
@@ -41,25 +42,10 @@ export default async function LocaleLayout({
             <Link className="btn-ghost" href={`${prefix}/install-guides`}>
               {dict.nav.installGuides}
             </Link>
-            <details className="group relative">
-              <summary className="btn-ghost cursor-pointer list-none text-xs">
-                {dict.nav.language}
-              </summary>
-              <div className="absolute right-0 z-50 mt-2 w-40 rounded-xl border border-border bg-black/80 p-2 text-xs text-muted shadow-glow">
-                <Link className="block rounded-lg px-3 py-2 hover:bg-white/10" href="/">
-                  {dict.nav.languageOptions.en}
-                </Link>
-                <Link className="block rounded-lg px-3 py-2 hover:bg-white/10" href="/zh">
-                  {dict.nav.languageOptions.zh}
-                </Link>
-                <Link className="block rounded-lg px-3 py-2 hover:bg-white/10" href="/ja">
-                  {dict.nav.languageOptions.ja}
-                </Link>
-                <Link className="block rounded-lg px-3 py-2 hover:bg-white/10" href="/ko">
-                  {dict.nav.languageOptions.ko}
-                </Link>
-              </div>
-            </details>
+            <LanguageSwitcher
+              label={dict.nav.language}
+              options={dict.nav.languageOptions as Record<Locale, string>}
+            />
           </nav>
         </div>
       </header>

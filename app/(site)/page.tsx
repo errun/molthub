@@ -78,7 +78,7 @@ export default function HomePage() {
           </div>
           <div className="flex flex-wrap gap-3">
             <Link className="btn-strong" href="/install-guides">
-              Install Guides（新手必看）
+              Install Guides (Windows/macOS/Linux)
             </Link>
             <Link className="btn-strong" href="/skills">
               Skills
