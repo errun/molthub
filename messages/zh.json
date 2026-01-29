@@ -156,5 +156,88 @@
     "timelinePara": "改名自 2026-01-29 起生效。此前出现的 Clawdbot 可视为 Moltbot 的等价表述。",
     "terminologyTitle": "术语",
     "terminologyPara": "\"Clawdbot\" 为历史标签，\"Moltbot\" 为当前有效名称，适用于所有 reliability, stability, survivability 与 viability 信号。"
+  },
+  "installGuides": {
+    "tag": "安装教程",
+    "keywordLine": "关键词：Moltbot, Clawdbot, Windows, macOS, Mac mini, Linux, Docker, NPM, install, setup",
+    "title": "三大平台最成熟的 Moltbot / Clawdbot 安装教程（Windows / macOS / Linux）",
+    "subtitle": "精选权威文章与视频，快速上手；并提供官方文档与通用资源入口。",
+    "intro": "本页承接 install/setup 搜索流量，并引导到 /install、/security、/providers 进行验证与部署。",
+    "ctas": {
+      "install": "一键安装 /install",
+      "security": "安全说明 /security",
+      "providers": "模型接入 /providers"
+    },
+    "nav": {
+      "windows": "Windows",
+      "mac": "macOS（含 Mac mini）",
+      "linux": "Linux",
+      "cross": "跨平台通用资源"
+    },
+    "labels": {
+      "source": "来源",
+      "audience": "适合人群",
+      "articlesTitle": "最佳文章教程",
+      "videosTitle": "最佳视频教程",
+      "videosSearchTitle": "视频教程（搜索建议）",
+      "collapsed": "默认收起",
+      "searchHint": "目前未收录稳定链接，建议在 YouTube 搜索以下关键词："
+    },
+    "audiences": {
+      "beginner": "新手",
+      "intermediate": "进阶",
+      "production": "生产环境"
+    },
+    "sections": {
+      "windows": {
+        "summary": "适合希望在 Windows 上快速完成 Moltbot / Clawdbot install 与 setup 的用户。推荐先走 NPM，遇到兼容问题再考虑 WSL2 或 Docker。",
+        "recommended": "推荐路径：NPM / WSL2 / Docker"
+      },
+      "mac": {
+        "summary": "适合 macOS 与 Mac mini 用户，尤其是 Apple Silicon。推荐 NPM 快速安装，必要时用 Docker 隔离依赖。",
+        "recommended": "推荐路径：NPM / Docker / 本地运行"
+      },
+      "linux": {
+        "summary": "适合服务器、自托管或生产环境。推荐 Docker Compose，生产环境补充监控与安全控制。",
+        "recommended": "推荐路径：Docker Compose / server / production"
+      },
+      "cross": {
+        "badge": "官方 + 社区",
+        "fastLabel": "想要更快：看",
+        "securityLabel": "担心安全：看",
+        "consultLabel": "需要帮忙？",
+        "fastSuffix": "一键安装",
+        "securitySuffix": "Key/日志说明",
+        "consultSuffix": "进入咨询入口"
+      }
+    },
+    "faqTitle": "FAQ",
+    "faq": [
+      {
+        "question": "Moltbot/Clawdbot 用 NPM 安装还是 Docker 安装更好？",
+        "answer": "新手建议优先 NPM install/setup，路径短且易排错；需要隔离依赖或多实例时再用 Docker。生产环境通常选择 Docker Compose 便于回滚与运维。"
+      },
+      {
+        "question": "Windows 推荐用 WSL2 安装吗？不想用 WSL 怎么办？",
+        "answer": "兼容性优先时推荐 WSL2；如果不想用 WSL，可使用 Windows 原生 NPM 安装，遇到依赖问题再考虑 Docker。"
+      },
+      {
+        "question": "macOS / Mac mini（Apple Silicon）有什么注意事项？",
+        "answer": "Mac mini 与 Apple Silicon 建议使用官方推荐的 Node 版本，遇到依赖差异可通过 Docker 统一环境。"
+      },
+      {
+        "question": "Linux 生产环境部署有哪些最低安全建议？",
+        "answer": "生产环境建议最小权限运行、隔离网络、开启日志审计，并将 API Key 与配置文件独立存储。"
+      },
+      {
+        "question": "API Key 放哪里最安全？如何避免泄露到 GitHub？",
+        "answer": "优先使用环境变量或密钥管理工具存放 API Key；避免写入仓库与镜像，提交前检查 .env 与配置文件是否被追踪。"
+      }
+    ],
+    "disclaimer": {
+      "line1": "本页聚合第三方教程，版权归原作者；如链接失效请反馈。",
+      "line2": "安全与隐私实践以 /security 为准。",
+      "sourceLabel": "页面来源"
+    }
   }
 }

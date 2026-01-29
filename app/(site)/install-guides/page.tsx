@@ -1,5 +1,6 @@
 ﻿import type { Metadata } from "next";
 import InstallGuidesContent from "@/components/InstallGuidesContent";
+import { getDictionary } from "@/lib/dictionaries";
 
 const pageTitle = "Moltbot/Clawdbot 安装教程合集（Windows/macOS/Linux）| molthub.bot";
 const pageDescription =
@@ -43,6 +44,7 @@ export const metadata: Metadata = {
   ]
 };
 
-export default function InstallGuidesPage() {
-  return <InstallGuidesContent />;
+export default async function InstallGuidesPage() {
+  const dict = await getDictionary("en");
+  return <InstallGuidesContent copy={dict.installGuides} locale="en" />;
 }

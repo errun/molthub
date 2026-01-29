@@ -27,7 +27,7 @@
       "Molthub.bot"
     ],
     "heroTag": "コミュニティ・シグナル層",
-    "title": "Moltbot 信頼性シグナル",
+    "title": "Molthub.bot - Moltbot 信頼性シグナル",
     "subtitle": "Moltbot Skills 向けのコミュニティ駆動 reliability シグナル",
     "slogan": "出荷前に MSI(TM) を確認。",
     "ctaSkills": "スキル",
@@ -156,5 +156,88 @@
     "timelinePara": "改名は 2026-01-29 に有効化。過去の Clawdbot 表記は Moltbot と同等に扱います。",
     "terminologyTitle": "用語",
     "terminologyPara": "\"Clawdbot\" は旧ラベル、\"Moltbot\" は現在の名称で、reliability / stability / survivability / viability シグナルに適用されます。"
+  },
+  "installGuides": {
+    "tag": "インストールガイド",
+    "keywordLine": "キーワード: Moltbot, Clawdbot, Windows, macOS, Mac mini, Linux, Docker, NPM, install, setup",
+    "title": "Windows / macOS / Linux 向け Moltbot / Clawdbot インストールガイド",
+    "subtitle": "信頼できる記事と動画を厳選。公式ドキュメントと共通リソースも案内します。",
+    "intro": "install/setup 検索流入のための集約ページで、/install・/security・/providers に案内します。",
+    "ctas": {
+      "install": "クイックインストール /install",
+      "security": "セキュリティ /security",
+      "providers": "プロバイダー /providers"
+    },
+    "nav": {
+      "windows": "Windows",
+      "mac": "macOS（Mac mini）",
+      "linux": "Linux",
+      "cross": "クロスプラットフォーム"
+    },
+    "labels": {
+      "source": "出典",
+      "audience": "対象",
+      "articlesTitle": "おすすめ記事",
+      "videosTitle": "おすすめ動画",
+      "videosSearchTitle": "動画ガイド（検索ヒント）",
+      "collapsed": "デフォルトで折りたたみ",
+      "searchHint": "安定したリンクが未収録のため、YouTube で以下を検索してください："
+    },
+    "audiences": {
+      "beginner": "初心者",
+      "intermediate": "中級",
+      "production": "本番"
+    },
+    "sections": {
+      "windows": {
+        "summary": "Windows で Moltbot/Clawdbot を導入する方向け。まず NPM、必要に応じて WSL2 や Docker を検討。",
+        "recommended": "推奨パス: NPM / WSL2 / Docker"
+      },
+      "mac": {
+        "summary": "macOS / Mac mini（Apple Silicon）向け。NPM で快速に、必要に応じて Docker で依存分離。",
+        "recommended": "推奨パス: NPM / Docker / ローカル"
+      },
+      "linux": {
+        "summary": "サーバー/自ホスト/本番向け。Docker Compose を推奨し、監視と安全対策を追加。",
+        "recommended": "推奨パス: Docker Compose / server / production"
+      },
+      "cross": {
+        "badge": "公式 + コミュニティ",
+        "fastLabel": "早く始めたい場合：",
+        "securityLabel": "安全重視：",
+        "consultLabel": "相談が必要？",
+        "fastSuffix": "クイックインストール",
+        "securitySuffix": "Key/ログ説明",
+        "consultSuffix": "相談入口"
+      }
+    },
+    "faqTitle": "FAQ",
+    "faq": [
+      {
+        "question": "NPM と Docker、どちらでインストールすべき？",
+        "answer": "初心者は NPM が最短です。依存分離や複数インスタンスには Docker。本番は Docker Compose が一般的。"
+      },
+      {
+        "question": "Windows では WSL2 が推奨？WSL を使わない場合は？",
+        "answer": "互換性重視なら WSL2。避けたい場合は Windows ネイティブ NPM を使い、問題が出たら Docker へ。"
+      },
+      {
+        "question": "macOS / Mac mini（Apple Silicon）注意点は？",
+        "answer": "推奨 Node バージョンを使い、ネイティブ依存で問題があれば Docker で統一環境に。"
+      },
+      {
+        "question": "Linux 本番環境の最低限セキュリティは？",
+        "answer": "最小権限、ネットワーク分離、監査ログを有効化し、API Key はリポジトリ外に保存。"
+      },
+      {
+        "question": "API Key はどこに置くのが安全？",
+        "answer": "環境変数やシークレット管理を使用し、.env や設定ファイルのコミットを避ける。"
+      }
+    ],
+    "disclaimer": {
+      "line1": "本ページは外部チュートリアルを集約したもので、著作権は各著者に帰属します。リンク切れは報告してください。",
+      "line2": "安全とプライバシーは /security を参照。",
+      "sourceLabel": "ページ元"
+    }
   }
 }

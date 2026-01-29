@@ -1,6 +1,7 @@
 ﻿import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import InstallGuidesContent from "@/components/InstallGuidesContent";
+import { getDictionary } from "@/lib/dictionaries";
 import { isLocale, type Locale } from "@/lib/i18n";
 
 const pageTitle = "Moltbot/Clawdbot 安装教程合集（Windows/macOS/Linux）| molthub.bot";
@@ -58,10 +59,19 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   };
 }
 
-export default function LocaleInstallGuidesPage({ params }: PageProps) {
+export default async function LocaleInstallGuidesPage({ params }: PageProps) {
   if (!isLocale(params.locale)) {
     notFound();
   }
 
-  return <InstallGuidesContent canonicalPath={`/${params.locale}/install-guides`} />;
+  const locale = params.locale as Locale;
+  const dict = await getDictionary(locale);
+
+  return (
+    <InstallGuidesContent
+      copy={dict.installGuides}
+      locale={locale}
+      canonicalPath={`/${params.locale}/install-guides`}
+    />
+  );
 }

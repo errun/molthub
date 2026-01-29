@@ -156,5 +156,88 @@
     "timelinePara": "The rename is effective as of 2026-01-29. Earlier mentions of Clawdbot should be considered equivalent to Moltbot for documentation and signal tracking purposes.",
     "terminologyTitle": "Terminology",
     "terminologyPara": "\"Clawdbot\" is now a legacy label. \"Moltbot\" is the active name used across all reliability, stability, survivability, and viability signals."
+  },
+  "installGuides": {
+    "tag": "Install Guides",
+    "keywordLine": "Keywords: Moltbot, Clawdbot, Windows, macOS, Mac mini, Linux, Docker, NPM, install, setup",
+    "title": "Most reliable Moltbot / Clawdbot install guides (Windows / macOS / Linux)",
+    "subtitle": "Curated authoritative articles and videos for fast setup, plus official docs and general resources.",
+    "intro": "This page captures install/setup search traffic and routes you to /install, /security, and /providers for validation and rollout.",
+    "ctas": {
+      "install": "Quick install /install",
+      "security": "Security notes /security",
+      "providers": "Providers /providers"
+    },
+    "nav": {
+      "windows": "Windows",
+      "mac": "macOS (Mac mini)",
+      "linux": "Linux",
+      "cross": "Cross-platform resources"
+    },
+    "labels": {
+      "source": "Source",
+      "audience": "Audience",
+      "articlesTitle": "Best articles",
+      "videosTitle": "Best videos",
+      "videosSearchTitle": "Video guides (search tips)",
+      "collapsed": "Collapsed by default",
+      "searchHint": "No stable link yet. Search YouTube for:"
+    },
+    "audiences": {
+      "beginner": "Beginner",
+      "intermediate": "Intermediate",
+      "production": "Production"
+    },
+    "sections": {
+      "windows": {
+        "summary": "Best for users installing Moltbot/Clawdbot on Windows. Start with NPM, then use WSL2 or Docker for compatibility.",
+        "recommended": "Recommended paths: NPM / WSL2 / Docker"
+      },
+      "mac": {
+        "summary": "Best for macOS and Mac mini users, especially Apple Silicon. Use NPM for speed and Docker for isolation.",
+        "recommended": "Recommended paths: NPM / Docker / Local"
+      },
+      "linux": {
+        "summary": "Best for servers and production. Use Docker Compose for rollout and add monitoring/security for production.",
+        "recommended": "Recommended paths: Docker Compose / server / production"
+      },
+      "cross": {
+        "badge": "Official + Community",
+        "fastLabel": "Need it faster? See",
+        "securityLabel": "Security focus? See",
+        "consultLabel": "Need help?",
+        "fastSuffix": "quick install",
+        "securitySuffix": "key/log notes",
+        "consultSuffix": "consulting entry"
+      }
+    },
+    "faqTitle": "FAQ",
+    "faq": [
+      {
+        "question": "Should I install Moltbot/Clawdbot with NPM or Docker?",
+        "answer": "For beginners, start with NPM for a shorter install/setup path. Use Docker for dependency isolation or multi-instance setups. Production typically prefers Docker Compose for rollbacks and ops."
+      },
+      {
+        "question": "Is WSL2 recommended on Windows? What if I don't want WSL?",
+        "answer": "WSL2 improves compatibility. If you avoid WSL, use native Windows NPM install and switch to Docker if dependencies become unstable."
+      },
+      {
+        "question": "Any macOS / Mac mini (Apple Silicon) considerations?",
+        "answer": "Use the recommended Node version. If you hit native dependency issues, Docker helps standardize the environment on Apple Silicon."
+      },
+      {
+        "question": "Minimum security guidance for Linux production?",
+        "answer": "Use least-privilege runtime, isolate networks, enable audit logging, and store API keys outside repos and images."
+      },
+      {
+        "question": "Where should API keys live to avoid GitHub leaks?",
+        "answer": "Use environment variables or a secrets manager. Avoid committing .env or config files and scan before pushing."
+      }
+    ],
+    "disclaimer": {
+      "line1": "This page aggregates third-party tutorials; copyrights belong to original authors. Please report broken links.",
+      "line2": "Security and privacy practices follow /security.",
+      "sourceLabel": "Page source"
+    }
   }
 }
