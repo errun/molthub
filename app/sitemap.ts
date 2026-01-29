@@ -7,7 +7,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = getBaseUrl();
   const lastModified = new Date();
 
-  const baseEntries = [
+  const baseEntries: MetadataRoute.Sitemap = [
     {
       url: `${baseUrl}/`,
       lastModified,
@@ -46,7 +46,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }
   ];
 
-  const localeEntries = locales.flatMap((locale) => [
+  const localeEntries: MetadataRoute.Sitemap = locales.flatMap((locale) => [
     {
       url: `${baseUrl}/${locale}`,
       lastModified,
