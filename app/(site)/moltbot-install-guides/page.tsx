@@ -1,10 +1,14 @@
 ﻿import type { Metadata } from "next";
-import InstallGuidesContent from "@/components/InstallGuidesContent";
-import { getDictionary } from "@/lib/dictionaries";
+import { promises as fs } from "node:fs";
+import { join } from "node:path";
+import MarkdownContent from "@/components/MarkdownContent";
+import JsonLd from "@/components/JsonLd";
+import { getBaseUrl } from "@/lib/site-url";
 
-const pageTitle = "Moltbot/Clawdbot 安装教程合集（Windows/macOS/Linux）| molthub.bot";
+const baseUrl = getBaseUrl();
+const pageTitle = "Moltbot Installation & Troubleshooting Quickstart | molthub.bot";
 const pageDescription =
-  "聚合 Windows、macOS（含 Mac mini）、Linux 三平台最成熟的 Moltbot/Clawdbot 安装文章与视频教程，并附官方文档与通用资源，适合快速安装与排错。";
+  "Get Moltbot installed, running, and verifiable—fast. Install → Verify → Fix common issues. Minimal guide covering Node.js setup, installation methods, and troubleshooting.";
 
 export const metadata: Metadata = {
   title: pageTitle,
@@ -15,14 +19,14 @@ export const metadata: Metadata = {
   openGraph: {
     title: pageTitle,
     description: pageDescription,
-    type: "website",
-    url: "/moltbot-install-guides",
+    type: "article",
+    url: `${baseUrl}/moltbot-install-guides`,
     images: [
       {
         url: "/opengraph-image",
         width: 1200,
         height: 630,
-        alt: "Moltbot/Clawdbot install guides"
+        alt: "Moltbot Installation & Troubleshooting Guide"
       }
     ]
   },
@@ -34,17 +38,71 @@ export const metadata: Metadata = {
   },
   keywords: [
     "Moltbot install",
+    "Moltbot setup",
+    "Moltbot troubleshooting",
     "Clawdbot install",
-    "Windows Moltbot setup",
-    "macOS Moltbot install",
-    "Mac mini Moltbot",
-    "Linux Moltbot setup",
-    "Docker Moltbot",
-    "NPM Moltbot"
+    "Node.js Moltbot",
+    "npm Moltbot",
+    "Moltbot doctor",
+    "Moltbot onboard",
+    "WSL2 Moltbot",
+    "Moltbot daemon"
   ]
 };
 
 export default async function MoltbotInstallGuidesPage() {
-  const dict = await getDictionary("en");
-  return <InstallGuidesContent copy={dict.installGuides} locale="en" canonicalPath="/moltbot-install-guides" />;
+  // Read the markdown file from the data directory
+  const markdownPath = join(process.cwd(), "data", "moltbot_install_troubleshoot_quickstart.md");
+  const markdownContent = await fs.readFile(markdownPath, "utf-8");
+
+  const jsonLdData = {
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    headline: "Moltbot Installation & Troubleshooting Quickstart",
+    description: pageDescription,
+    url: `${baseUrl}/moltbot-install-guides`,
+    datePublished: "2026-01-29",
+    dateModified: "2026-01-29",
+    author: {
+      "@type": "Organization",
+      name: "Molthub.bot"
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Molthub.bot",
+      url: baseUrl
+    },
+    inLanguage: "en",
+    about: {
+      "@type": "SoftwareApplication",
+      name: "Moltbot",
+      applicationCategory: "DeveloperApplication"
+    }
+  };
+
+  return (
+    <section className="container py-16 md:py-24">
+      <JsonLd id="ld-moltbot-install-guides" data={jsonLdData} />
+
+      <div className="max-w-4xl mx-auto">
+        <div className="mb-8">
+          <span className="tag">Installation Guide</span>
+        </div>
+
+        <MarkdownContent content={markdownContent} />
+
+        <div className="mt-12 pt-8 border-t border-white/10">
+          <p className="text-sm text-muted">
+            Last updated: January 29, 2026 | Source:{" "}
+            <a
+              href="https://molthub.bot"
+              className="text-accent hover:text-accent/80 underline"
+            >
+              molthub.bot
+            </a>
+          </p>
+        </div>
+      </div>
+    </section>
+  );
 }
