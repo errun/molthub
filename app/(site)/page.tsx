@@ -67,7 +67,7 @@ export default function HomePage() {
           <div className="space-y-4">
             <span className="tag">Community Signal Layer</span>
             <h1 className="font-display text-5xl leading-[1.05] tracking-tight md:text-7xl">
-              Molthub.bot - Moltbot Reliability Signals
+              Moltbot Reliability Signals
             </h1>
             <p className="text-lg text-muted md:text-xl">
               Community-Driven Reliability Signals for Moltbot Skills
