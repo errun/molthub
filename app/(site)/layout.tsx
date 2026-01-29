@@ -24,9 +24,6 @@ export default async function SiteLayout({
             <Link className="btn-ghost" href="/radar">
               {dict.nav.radar}
             </Link>
-            <Link className="btn-ghost" href="/install-guides">
-              {dict.nav.installGuides}
-            </Link>
             <LanguageSwitcher
               label={dict.nav.language}
               options={dict.nav.languageOptions as Record<Locale, string>}

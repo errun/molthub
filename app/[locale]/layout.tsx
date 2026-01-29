@@ -39,9 +39,6 @@ export default async function LocaleLayout({
             <Link className="btn-ghost" href={`${prefix}/radar`}>
               {dict.nav.radar}
             </Link>
-            <Link className="btn-ghost" href={`${prefix}/install-guides`}>
-              {dict.nav.installGuides}
-            </Link>
             <LanguageSwitcher
               label={dict.nav.language}
               options={dict.nav.languageOptions as Record<Locale, string>}
