@@ -1,6 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import Link from "next/link";
+import Script from "next/script";
 import { Bricolage_Grotesque, IBM_Plex_Sans } from "next/font/google";
 
 const display = Bricolage_Grotesque({
@@ -63,6 +64,16 @@ export default function RootLayout({
             </div>
           </footer>
         </div>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-DWVQPZW48G"
+          strategy="afterInteractive"
+        />
+        <Script id="ga-init" strategy="afterInteractive">
+          {`window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-DWVQPZW48G');`}
+        </Script>
       </body>
     </html>
   );
