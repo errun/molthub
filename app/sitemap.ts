@@ -39,6 +39,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.85
     },
     {
+      url: `${baseUrl}/moltbot-install-guides`,
+      lastModified,
+      changeFrequency: "weekly",
+      priority: 0.85
+    },
+    {
       url: `${baseUrl}/about`,
       lastModified,
       changeFrequency: "monthly",

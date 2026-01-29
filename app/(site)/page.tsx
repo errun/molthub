@@ -90,12 +90,6 @@ export default function HomePage() {
               About
             </Link>
           </div>
-          <Link
-            href="/rename"
-            className="text-xs text-muted underline-offset-4 hover:text-ink hover:underline"
-          >
-            Why Clawdbot became Moltbot
-          </Link>
         </div>
         <div className="card p-8 shadow-glow">
           <div className="flex items-center justify-between">
@@ -168,7 +162,14 @@ export default function HomePage() {
           </Link>
         ))}
       </div>
+      <div className="mt-10 text-xs text-muted">
+        <Link
+          href="/rename"
+          className="underline-offset-4 hover:text-ink hover:underline"
+        >
+          Why Clawdbot became Moltbot
+        </Link>
+      </div>
     </section>
   );
 }
-

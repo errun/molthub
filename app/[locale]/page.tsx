@@ -100,12 +100,6 @@ export default async function LocaleHomePage({ params }: PageProps) {
               {dict.home.ctaAbout}
             </Link>
           </div>
-          <Link
-            href={`${prefix}/rename`}
-            className="text-xs text-muted underline-offset-4 hover:text-ink hover:underline"
-          >
-            {dict.home.renameLink}
-          </Link>
         </div>
         <div className="card p-8 shadow-glow">
           <div className="flex items-center justify-between">
@@ -164,6 +158,14 @@ export default async function LocaleHomePage({ params }: PageProps) {
           );
         }
         )}
+      </div>
+      <div className="mt-10 text-xs text-muted">
+        <Link
+          href={`${prefix}/rename`}
+          className="underline-offset-4 hover:text-ink hover:underline"
+        >
+          {dict.home.renameLink}
+        </Link>
       </div>
     </section>
   );
