@@ -1,5 +1,12 @@
 import type { Metadata } from "next";
+import JsonLd from "@/components/JsonLd";
 import radarData from "@/data/radar.json";
+import { getBaseUrl } from "@/lib/site-url";
+
+const baseUrl = getBaseUrl();
+const pageTitle = "Molthub.bot - Moltbot Reliability Radar & Risk Signals";
+const pageDescription =
+  "Reliability Radar(TM) highlights elevated risk, degraded behavior, and configuration sensitivity for Moltbot skills. Review affected skills and severity.";
 
 const severityStyles: Record<string, string> = {
   Low: "border-sky-400/30 text-sky-200",
@@ -8,14 +15,30 @@ const severityStyles: Record<string, string> = {
 };
 
 export const metadata: Metadata = {
-  title: "Molthub.bot - Moltbot Reliability Radar",
-  description:
-    "Reliability Radar(TM) highlights elevated risk signals and stability observations for Moltbot skills.",
+  title: pageTitle,
+  description: pageDescription,
+  alternates: {
+    canonical: "/radar"
+  },
   openGraph: {
-    title: "Molthub.bot - Moltbot Reliability Radar",
-    description:
-      "Reliability Radar(TM) highlights elevated risk signals and stability observations for Moltbot skills.",
-    type: "website"
+    title: pageTitle,
+    description: pageDescription,
+    type: "website",
+    url: "/radar",
+    images: [
+      {
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "Molthub.bot - Moltbot reliability radar"
+      }
+    ]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: pageTitle,
+    description: pageDescription,
+    images: ["/twitter-image"]
   },
   keywords: [
     "reliability",
@@ -29,6 +52,22 @@ export const metadata: Metadata = {
 export default function RadarPage() {
   return (
     <section className="container py-16">
+      <JsonLd
+        id="ld-radar"
+        data={{
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          name: "Molthub.bot - Moltbot Reliability Radar",
+          url: `${baseUrl}/radar`,
+          description: pageDescription,
+          isPartOf: {
+            "@type": "WebSite",
+            name: "Molthub.bot",
+            url: baseUrl
+          },
+          inLanguage: "en"
+        }}
+      />
       <div className="space-y-6">
         <div className="card p-6">
           <span className="tag">Reliability Radar(TM)</span>
@@ -36,6 +75,9 @@ export default function RadarPage() {
           <p className="mt-2 text-sm text-muted">
             Neutral summaries of elevated risk, instability, and configuration signals
             for Moltbot skills.
+          </p>
+          <p className="mt-2 text-sm text-muted">
+            Use these briefs to track reliability posture changes and prioritize validation.
           </p>
         </div>
 

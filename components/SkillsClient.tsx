@@ -40,6 +40,10 @@ export default function SkillsClient({ skills }: { skills: Skill[] }) {
           <p className="text-sm text-muted">
             Search Moltbot skills by name, then sort by MSI to review current reliability posture.
           </p>
+          <p className="text-sm text-muted">
+            This view summarizes community signals, tier posture, and recent stability notes for
+            Moltbot skills.
+          </p>
         </div>
         <div className="flex flex-wrap items-center gap-3">
           <input

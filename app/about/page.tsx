@@ -1,14 +1,37 @@
 import type { Metadata } from "next";
+import JsonLd from "@/components/JsonLd";
+import { getBaseUrl } from "@/lib/site-url";
+
+const baseUrl = getBaseUrl();
+const pageTitle = "Molthub.bot - Moltbot Methodology & Neutral Signals";
+const pageDescription =
+  "Understand Molthub.bot's neutral methodology for Moltbot reliability signals, covering MSI(TM) tiers, evidence sources, and update cadence. Descriptive only.";
 
 export const metadata: Metadata = {
-  title: "Molthub.bot - Moltbot Methodology",
-  description:
-    "About Molthub.bot and the neutral methodology used to compile reliability signals for Moltbot skills.",
+  title: pageTitle,
+  description: pageDescription,
+  alternates: {
+    canonical: "/about"
+  },
   openGraph: {
-    title: "Molthub.bot - Moltbot Methodology",
-    description:
-      "About Molthub.bot and the neutral methodology used to compile reliability signals for Moltbot skills.",
-    type: "website"
+    title: pageTitle,
+    description: pageDescription,
+    type: "website",
+    url: "/about",
+    images: [
+      {
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "Molthub.bot - Moltbot methodology"
+      }
+    ]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: pageTitle,
+    description: pageDescription,
+    images: ["/twitter-image"]
   },
   keywords: [
     "reliability",
@@ -22,6 +45,22 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <section className="container py-16">
+      <JsonLd
+        id="ld-about"
+        data={{
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          name: "Molthub.bot - Moltbot Methodology",
+          url: `${baseUrl}/about`,
+          description: pageDescription,
+          isPartOf: {
+            "@type": "WebSite",
+            name: "Molthub.bot",
+            url: baseUrl
+          },
+          inLanguage: "en"
+        }}
+      />
       <div className="space-y-8">
         <div className="card p-6">
           <span className="tag">About</span>

@@ -3,6 +3,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Script from "next/script";
 import { Bricolage_Grotesque, IBM_Plex_Sans } from "next/font/google";
+import JsonLd from "@/components/JsonLd";
+import { getBaseUrl } from "@/lib/site-url";
 
 const display = Bricolage_Grotesque({
   subsets: ["latin"],
@@ -16,16 +18,51 @@ const body = IBM_Plex_Sans({
   weight: ["300", "400", "500", "600", "700"]
 });
 
+const baseUrl = getBaseUrl();
+const siteDescription =
+  "Molthub.bot provides community-driven reliability signals for Moltbot skills, including MSI(TM) tiers, stability notes, and Radar(TM) briefs. Descriptive only.";
+const siteJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Molthub.bot",
+  url: baseUrl,
+  description: siteDescription,
+  inLanguage: "en",
+  keywords: "reliability, stability, survivability, viability, Moltbot skills"
+};
+
 export const metadata: Metadata = {
-  title: "Molthub.bot - Moltbot Reliability Signals",
-  description: "Community-driven reliability signals for Moltbot skills.",
+  metadataBase: new URL(baseUrl),
+  title: "Molthub.bot - Moltbot Reliability Signals & MSI(TM) Tiers",
+  description: siteDescription,
   keywords: [
     "reliability",
     "stability",
     "survivability",
     "viability",
     "Moltbot skills"
-  ]
+  ],
+  openGraph: {
+    type: "website",
+    url: "/",
+    siteName: "Molthub.bot",
+    title: "Molthub.bot - Moltbot Reliability Signals & MSI(TM) Tiers",
+    description: siteDescription,
+    images: [
+      {
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "Molthub.bot - Moltbot reliability signals"
+      }
+    ]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Molthub.bot - Moltbot Reliability Signals & MSI(TM) Tiers",
+    description: siteDescription,
+    images: ["/twitter-image"]
+  }
 };
 
 export default function RootLayout({
@@ -36,6 +73,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${display.variable} ${body.variable}`}>
       <body>
+        <JsonLd id="ld-website" data={siteJsonLd} />
         <div className="noise-layer" aria-hidden="true" />
         <div className="min-h-screen">
           <header className="border-b border-white/5 bg-black/30 backdrop-blur">

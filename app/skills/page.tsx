@@ -1,16 +1,39 @@
 import type { Metadata } from "next";
 import SkillsClient, { type Skill } from "@/components/SkillsClient";
+import JsonLd from "@/components/JsonLd";
 import skillsDataRaw from "@/data/skills.json";
+import { getBaseUrl } from "@/lib/site-url";
+
+const baseUrl = getBaseUrl();
+const pageTitle = "Molthub.bot - Moltbot Skills Dashboard & MSI(TM) Scores";
+const pageDescription =
+  "Browse Moltbot skills with MSI(TM) scores, tiers, and operator notes. Search by name, sort by MSI, and scan stability signals at a glance. Updated weekly.";
 
 export const metadata: Metadata = {
-  title: "Molthub.bot - Moltbot Skills Dashboard",
-  description:
-    "Browse Moltbot skills with reliability signals, MSI tiers, and recent updates.",
+  title: pageTitle,
+  description: pageDescription,
+  alternates: {
+    canonical: "/skills"
+  },
   openGraph: {
-    title: "Molthub.bot - Moltbot Skills Dashboard",
-    description:
-      "Browse Moltbot skills with reliability signals, MSI tiers, and recent updates.",
-    type: "website"
+    title: pageTitle,
+    description: pageDescription,
+    type: "website",
+    url: "/skills",
+    images: [
+      {
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "Molthub.bot - Moltbot skills dashboard"
+      }
+    ]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: pageTitle,
+    description: pageDescription,
+    images: ["/twitter-image"]
   },
   keywords: [
     "reliability",
@@ -26,6 +49,22 @@ export default function SkillsPage() {
 
   return (
     <section className="container py-16">
+      <JsonLd
+        id="ld-skills"
+        data={{
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          name: "Molthub.bot - Moltbot Skills Dashboard",
+          url: `${baseUrl}/skills`,
+          description: pageDescription,
+          isPartOf: {
+            "@type": "WebSite",
+            name: "Molthub.bot",
+            url: baseUrl
+          },
+          inLanguage: "en"
+        }}
+      />
       <SkillsClient skills={skillsData} />
     </section>
   );

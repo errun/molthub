@@ -1,15 +1,38 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import JsonLd from "@/components/JsonLd";
+import { getBaseUrl } from "@/lib/site-url";
+
+const baseUrl = getBaseUrl();
+const pageTitle = "Molthub.bot - Moltbot Reliability Signals & MSI(TM) Tiers";
+const pageDescription =
+  "Track Moltbot reliability signals and MSI(TM) tiers for community-vetted skills. Explore stability, survivability, and viability notes before you ship.";
 
 export const metadata: Metadata = {
-  title: "Molthub.bot - Moltbot Reliability Signals",
-  description:
-    "Community-driven reliability signals for Moltbot skills. Check MSI(TM) before you ship.",
+  title: pageTitle,
+  description: pageDescription,
+  alternates: {
+    canonical: "/"
+  },
   openGraph: {
-    title: "Molthub.bot - Moltbot Reliability Signals",
-    description:
-      "Community-driven reliability signals for Moltbot skills. Check MSI(TM) before you ship.",
-    type: "website"
+    title: pageTitle,
+    description: pageDescription,
+    type: "website",
+    url: "/",
+    images: [
+      {
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "Molthub.bot - Moltbot reliability signals"
+      }
+    ]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: pageTitle,
+    description: pageDescription,
+    images: ["/twitter-image"]
   },
   keywords: [
     "reliability",
@@ -23,6 +46,22 @@ export const metadata: Metadata = {
 export default function HomePage() {
   return (
     <section className="container py-16 md:py-24">
+      <JsonLd
+        id="ld-homepage"
+        data={{
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          name: "Molthub.bot - Moltbot Reliability Signals",
+          url: baseUrl,
+          description: pageDescription,
+          isPartOf: {
+            "@type": "WebSite",
+            name: "Molthub.bot",
+            url: baseUrl
+          },
+          inLanguage: "en"
+        }}
+      />
       <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr]">
         <div className="space-y-8">
           <div className="space-y-4">
