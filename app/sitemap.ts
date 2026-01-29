@@ -30,6 +30,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified,
       changeFrequency: "monthly",
       priority: 0.6
+    },
+    {
+      url: `${baseUrl}/rename`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.5
     }
   ];
 }

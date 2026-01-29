@@ -36,11 +36,11 @@ export const metadata: Metadata = {
     images: ["/twitter-image"]
   },
   keywords: [
-    "reliability",
-    "stability",
-    "survivability",
-    "viability",
-    "Moltbot skills"
+    "Moltbot skills dashboard",
+    "Moltbot MSI scores",
+    "Moltbot skill stability",
+    "Moltbot tiers",
+    "Moltbot reliability index"
   ]
 };
 

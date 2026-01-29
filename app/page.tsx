@@ -35,11 +35,11 @@ export const metadata: Metadata = {
     images: ["/twitter-image"]
   },
   keywords: [
-    "reliability",
-    "stability",
-    "survivability",
-    "viability",
-    "Moltbot skills"
+    "Moltbot reliability",
+    "Moltbot MSI",
+    "Moltbot reliability signals",
+    "Moltbot skills ecosystem",
+    "Molthub.bot"
   ]
 };
 
@@ -87,6 +87,12 @@ export default function HomePage() {
               About
             </Link>
           </div>
+          <Link
+            href="/rename"
+            className="text-xs text-muted underline-offset-4 hover:text-ink hover:underline"
+          >
+            Why Clawdbot became Moltbot
+          </Link>
         </div>
         <div className="card p-8 shadow-glow">
           <div className="flex items-center justify-between">

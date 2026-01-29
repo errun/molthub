@@ -36,11 +36,11 @@ export const metadata: Metadata = {
   title: "Molthub.bot - Moltbot Reliability Signals & MSI(TM) Tiers",
   description: siteDescription,
   keywords: [
-    "reliability",
-    "stability",
-    "survivability",
-    "viability",
-    "Moltbot skills"
+    "Moltbot reliability",
+    "Moltbot stability",
+    "Moltbot survivability",
+    "Moltbot viability",
+    "Molthub.bot"
   ],
   openGraph: {
     type: "website",
