@@ -80,6 +80,9 @@ export default function HomePage() {
             <Link className="btn-strong" href="/install-guides">
               Install Guides (Windows/macOS/Linux)
             </Link>
+            <Link className="btn-strong" href="/moltbot-install-guides">
+              Quickstart Guide
+            </Link>
             <Link className="btn-strong" href="/skills">
               Skills
             </Link>
