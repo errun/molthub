@@ -1,156 +1,243 @@
-[
+﻿[
   {
-    "name": "twitter-search",
-    "msi": 85,
+    "name": "gmail",
+    "msi": 9.5,
     "tier": "Stable",
-    "notes": "Consistent behavior across common setups.",
-    "lastUpdate": "2026-01-28"
+    "install": "或 ClawHub 搜 \"gmail\"",
+    "link": "https://github.com/openclaw/skills/tree/main/skills/.../gmail",
+    "notes": "内建/高用",
+    "lastUpdate": "2026-02-03"
   },
   {
-    "name": "web-extract",
-    "msi": 78,
+    "name": "calendar",
+    "msi": 9,
+    "tier": "Stable",
+    "install": "ClawHub 搜 \"calendar\" 或 bundled Google/Outlook",
+    "notes": "内建",
+    "lastUpdate": "2026-02-03"
+  },
+  {
+    "name": "web-browser / puppeteer-browser",
+    "msi": 8.5,
     "tier": "Risky",
-    "notes": "Occasional variance with complex layouts.",
-    "lastUpdate": "2026-01-28"
+    "link": "https://github.com/openclaw/skills/tree/main/skills/.../puppeteer-browser",
+    "notes": "强大但需限权",
+    "lastUpdate": "2026-02-03"
   },
   {
-    "name": "slack-alert",
-    "msi": 92,
-    "tier": "Stable",
-    "notes": "Stable delivery across standard webhook paths.",
-    "lastUpdate": "2026-01-28"
-  },
-  {
-    "name": "docs-summarize",
-    "msi": 88,
-    "tier": "Stable",
-    "notes": "Reliable output for typical document sizes.",
-    "lastUpdate": "2026-01-28"
-  },
-  {
-    "name": "notion-sync",
-    "msi": 73,
+    "name": "twitter / x-client",
+    "msi": 8,
     "tier": "Risky",
-    "notes": "Degraded behavior with large nested pages.",
-    "lastUpdate": "2026-01-28"
+    "install": "ClawHub 搜 \"twitter\" 或 \"x\"",
+    "notes": "API 注意额度",
+    "lastUpdate": "2026-02-03"
   },
   {
-    "name": "jira-triage",
-    "msi": 81,
+    "name": "telegram",
+    "msi": 9,
     "tier": "Stable",
-    "notes": "Stable under default field mappings.",
-    "lastUpdate": "2026-01-28"
+    "link": "https://github.com/openclaw/skills/tree/main/skills/.../telegram",
+    "notes": "超搭 OpenClaw",
+    "lastUpdate": "2026-02-03"
   },
   {
-    "name": "webhook-router",
-    "msi": 67,
+    "name": "whatsapp",
+    "msi": 8.5,
     "tier": "Risky",
-    "notes": "Elevated risk when traffic spikes beyond defaults.",
-    "lastUpdate": "2026-01-28"
+    "install": "ClawHub 搜 \"whatsapp\"",
+    "notes": "近期稳定提升",
+    "lastUpdate": "2026-02-03"
   },
   {
-    "name": "csv-cleaner",
-    "msi": 59,
-    "tier": "Risky",
-    "notes": "Minor stability drift on mixed delimiters.",
-    "lastUpdate": "2026-01-28"
-  },
-  {
-    "name": "rss-poller",
-    "msi": 83,
+    "name": "feishu / lark",
+    "msi": 9.2,
     "tier": "Stable",
-    "notes": "Stable polling cadence under typical feeds.",
-    "lastUpdate": "2026-01-28"
+    "install": "ClawHub 搜 \"feishu\" 或 \"lark\"",
+    "notes": "国内最友好",
+    "lastUpdate": "2026-02-03"
+  },
+  {
+    "name": "dingtalk",
+    "msi": 8.8,
+    "tier": "Risky",
+    "install": "ClawHub 搜 \"dingtalk\"",
+    "notes": "上班族专用",
+    "lastUpdate": "2026-02-03"
+  },
+  {
+    "name": "notion",
+    "msi": 8.5,
+    "tier": "Risky",
+    "link": "https://github.com/openclaw/skills/tree/main/skills/.../notion",
+    "notes": "API 偶尔慢",
+    "lastUpdate": "2026-02-03"
+  },
+  {
+    "name": "todoist",
+    "msi": 8,
+    "tier": "Risky",
+    "install": "ClawHub 搜 \"todoist\"",
+    "notes": "轻量任务",
+    "lastUpdate": "2026-02-03"
+  },
+  {
+    "name": "jina-reader / readability",
+    "msi": 9,
+    "tier": "Stable",
+    "install": "ClawHub 搜 \"jina-reader\" 或 \"readability\"",
+    "notes": "阅读神器",
+    "lastUpdate": "2026-02-03"
+  },
+  {
+    "name": "youtube-transcript",
+    "msi": 9.3,
+    "tier": "Stable",
+    "install": "ClawHub 搜 \"youtube transcript\"",
+    "notes": "学习必备",
+    "lastUpdate": "2026-02-03"
+  },
+  {
+    "name": "rss-monitor",
+    "msi": 8.7,
+    "tier": "Risky",
+    "install": "ClawHub 搜 \"rss\"",
+    "notes": "资讯自动化",
+    "lastUpdate": "2026-02-03"
+  },
+  {
+    "name": "crypto-wallet-monitor",
+    "msi": 7,
+    "tier": "Unstable",
+    "install": "ClawHub 搜 crypto wallet（小心恶意！）",
+    "notes": "高风险，慎装",
+    "lastUpdate": "2026-02-03"
+  },
+  {
+    "name": "imsg / ios-messages",
+    "msi": 8,
+    "tier": "Risky",
+    "install": "ClawHub 搜 \"imessage\" 或 \"ios messages\"",
+    "notes": "苹果专属",
+    "lastUpdate": "2026-02-03"
+  },
+  {
+    "name": "shell-exec",
+    "msi": 7.5,
+    "tier": "Unstable",
+    "install": "Bundled 或 ClawHub 搜 \"shell\"",
+    "notes": "最危险，严限",
+    "lastUpdate": "2026-02-03"
+  },
+  {
+    "name": "file-system",
+    "msi": 8.5,
+    "tier": "Risky",
+    "install": "Bundled file ops",
+    "notes": "日常文件",
+    "lastUpdate": "2026-02-03"
+  },
+  {
+    "name": "weather",
+    "msi": 8,
+    "tier": "Risky",
+    "install": "ClawHub 搜 \"weather\"",
+    "notes": "简单实用",
+    "lastUpdate": "2026-02-03"
+  },
+  {
+    "name": "stock-price",
+    "msi": 7.8,
+    "tier": "Unstable",
+    "install": "ClawHub 搜 \"stock\" 或 \"finance\"",
+    "notes": "财经用",
+    "lastUpdate": "2026-02-03"
+  },
+  {
+    "name": "github",
+    "msi": 8.8,
+    "tier": "Risky",
+    "link": "https://github.com/openclaw/skills/tree/main/skills/steipete/github/SKILL.md",
+    "notes": "程序员神器",
+    "lastUpdate": "2026-02-03"
+  },
+  {
+    "name": "vscode-remote",
+    "msi": 7,
+    "tier": "Unstable",
+    "install": "ClawHub 搜 \"vscode\"（实验性）",
+    "notes": "不太稳",
+    "lastUpdate": "2026-02-03"
+  },
+  {
+    "name": "deepl-translate",
+    "msi": 9,
+    "tier": "Stable",
+    "install": "ClawHub 搜 \"deepl\"",
+    "notes": "翻译顶级",
+    "lastUpdate": "2026-02-03"
+  },
+  {
+    "name": "perplexity-search",
+    "msi": 8.5,
+    "tier": "Risky",
+    "install": "ClawHub 搜 \"perplexity\"",
+    "notes": "研究好帮手",
+    "lastUpdate": "2026-02-03"
+  },
+  {
+    "name": "arxiv-paper",
+    "msi": 8.7,
+    "tier": "Risky",
+    "install": "ClawHub 搜 \"arxiv\"",
+    "notes": "学术党爱",
+    "lastUpdate": "2026-02-03"
+  },
+  {
+    "name": "whoop-monitor",
+    "msi": 7.5,
+    "tier": "Unstable",
+    "install": "ClawHub 搜 \"whoop\"",
+    "notes": "小众健身",
+    "lastUpdate": "2026-02-03"
+  },
+  {
+    "name": "flight-checkin",
+    "msi": 8,
+    "tier": "Risky",
+    "install": "ClawHub 搜 \"flight\"",
+    "notes": "出差用",
+    "lastUpdate": "2026-02-03"
   },
   {
     "name": "email-digest",
-    "msi": 76,
-    "tier": "Risky",
-    "notes": "Occasional scheduling drift in peak windows.",
-    "lastUpdate": "2026-01-28"
-  },
-  {
-    "name": "uptime-check",
-    "msi": 90,
+    "msi": 9,
     "tier": "Stable",
-    "notes": "Consistent survivability across regions.",
-    "lastUpdate": "2026-01-28"
+    "install": "ClawHub 搜 \"email digest\"",
+    "notes": "收件箱救星",
+    "lastUpdate": "2026-02-03"
   },
   {
-    "name": "prompt-guard",
-    "msi": 45,
-    "tier": "Risky",
-    "notes": "Stability sensitive to rule depth.",
-    "lastUpdate": "2026-01-28"
-  },
-  {
-    "name": "s3-uploader",
-    "msi": 84,
+    "name": "cron-jobs",
+    "msi": 9.2,
     "tier": "Stable",
-    "notes": "Stable behavior across standard storage classes.",
-    "lastUpdate": "2026-01-28"
+    "install": "ClawHub 搜 \"cron\"",
+    "notes": "真正自主化",
+    "lastUpdate": "2026-02-03"
   },
   {
-    "name": "image-resize",
-    "msi": 71,
+    "name": "memory-longterm",
+    "msi": 8.8,
     "tier": "Risky",
-    "notes": "Degraded performance on large batch sizes.",
-    "lastUpdate": "2026-01-28"
+    "install": "Bundled 或 ClawHub 搜 \"memory\"",
+    "notes": "越用越懂你",
+    "lastUpdate": "2026-02-03"
   },
   {
-    "name": "pdf-to-text",
-    "msi": 62,
-    "tier": "Risky",
-    "notes": "Unstable extraction on heavily scanned files.",
-    "lastUpdate": "2026-01-28"
-  },
-  {
-    "name": "locale-normalizer",
-    "msi": 38,
-    "tier": "Unstable",
-    "notes": "Failed normalization when locale inputs are mixed.",
-    "lastUpdate": "2026-01-28"
-  },
-  {
-    "name": "timezone-convert",
-    "msi": 52,
-    "tier": "Risky",
-    "notes": "Stability drops under legacy offsets.",
-    "lastUpdate": "2026-01-28"
-  },
-  {
-    "name": "billing-audit",
-    "msi": 33,
-    "tier": "Unstable",
-    "notes": "Degraded behavior during partial reconciliation.",
-    "lastUpdate": "2026-01-28"
-  },
-  {
-    "name": "log-shipper",
-    "msi": 79,
-    "tier": "Risky",
-    "notes": "Elevated risk at sustained high throughput.",
-    "lastUpdate": "2026-01-28"
-  },
-  {
-    "name": "chrome-driver",
-    "msi": 27,
-    "tier": "Unstable",
-    "notes": "Unstable in headless environments without patches.",
-    "lastUpdate": "2026-01-28"
-  },
-  {
-    "name": "session-replay",
-    "msi": 41,
-    "tier": "Risky",
-    "notes": "Viability depends on recorder limits.",
-    "lastUpdate": "2026-01-28"
-  },
-  {
-    "name": "rate-limit-monitor",
-    "msi": 86,
+    "name": "self-improve / skill-generator",
+    "msi": 9,
     "tier": "Stable",
-    "notes": "Stable alerts with standard thresholds.",
-    "lastUpdate": "2026-01-28"
+    "install": "ClawHub 搜 \"self improve\" 或 \"skill generator\"",
+    "notes": "",
+    "lastUpdate": "2026-02-03"
   }
 ]

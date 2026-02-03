@@ -6,6 +6,8 @@ export type Skill = {
   name: string;
   msi: number;
   tier: "Stable" | "Risky" | "Unstable";
+  install?: string;
+  link?: string;
   notes: string;
   lastUpdate: string;
 };
@@ -21,6 +23,7 @@ export type SkillsLabels = {
     name: string;
     msi: string;
     tier: string;
+    install?: string;
     notes: string;
     lastUpdate: string;
   };
@@ -31,6 +34,11 @@ const tierStyles: Record<Skill["tier"], string> = {
   Stable: "border-emerald-400/30 text-emerald-200",
   Risky: "border-amber-400/30 text-amber-200",
   Unstable: "border-rose-400/30 text-rose-200"
+};
+
+const formatMsi = (msi: number) => {
+  const formatted = Number.isInteger(msi) ? `${msi}` : msi.toFixed(1);
+  return `${formatted}/10`;
 };
 
 export default function SkillsClient({
@@ -82,11 +90,17 @@ export default function SkillsClient({
       </div>
 
       <div className="grid gap-4">
-        {visible.map((skill, index) => (
-          <div
-            key={`${skill.name}-${index}`}
-            className="card grid gap-4 p-5 md:grid-cols-[1.2fr_0.6fr_0.6fr_1.2fr_0.7fr] md:items-center"
-          >
+        {visible.map((skill, index) => {
+          const installLabel = labels.columns.install ?? "Install / Link";
+          const hasLink = Boolean(skill.link?.trim());
+          const hasInstall = Boolean(skill.install?.trim());
+          const notesText = skill.notes?.trim() ? skill.notes : "-";
+
+          return (
+            <div
+              key={`${skill.name}-${index}`}
+              className="card grid gap-4 p-5 md:grid-cols-[1.1fr_0.5fr_0.6fr_1.6fr_1.1fr_0.7fr] md:items-center"
+            >
             <div>
               <div className="text-xs uppercase tracking-[0.2em] text-muted">
                 {labels.columns.name}
@@ -97,7 +111,9 @@ export default function SkillsClient({
               <div className="text-xs uppercase tracking-[0.2em] text-muted">
                 {labels.columns.msi}
               </div>
-              <div className="mt-1 text-lg font-semibold text-accent">{skill.msi}</div>
+              <div className="mt-1 text-lg font-semibold text-accent">
+                {formatMsi(skill.msi)}
+              </div>
             </div>
             <div>
               <div className="text-xs uppercase tracking-[0.2em] text-muted">
@@ -113,9 +129,28 @@ export default function SkillsClient({
             </div>
             <div>
               <div className="text-xs uppercase tracking-[0.2em] text-muted">
+                {installLabel}
+              </div>
+              <div className="mt-1 space-y-2 text-sm text-muted">
+                {hasLink && (
+                  <a
+                    className="block break-all text-accent underline underline-offset-2"
+                    href={skill.link}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {skill.link}
+                  </a>
+                )}
+                {hasInstall && <div className="break-words">{skill.install}</div>}
+                {!hasLink && !hasInstall && <div>-</div>}
+              </div>
+            </div>
+            <div>
+              <div className="text-xs uppercase tracking-[0.2em] text-muted">
                 {labels.columns.notes}
               </div>
-              <div className="mt-1 text-sm text-muted">{skill.notes}</div>
+              <div className="mt-1 text-sm text-muted">{notesText}</div>
             </div>
             <div>
               <div className="text-xs uppercase tracking-[0.2em] text-muted">
@@ -123,8 +158,9 @@ export default function SkillsClient({
               </div>
               <div className="mt-1 text-sm text-muted">{skill.lastUpdate}</div>
             </div>
-          </div>
-        ))}
+            </div>
+          );
+        })}
       </div>
 
       {visible.length === 0 && (

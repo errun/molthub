@@ -81,6 +81,7 @@
       "name": "Name",
       "msi": "MSI",
       "tier": "Tier",
+      "install": "Install / Link",
       "notes": "Notes",
       "lastUpdate": "Last Update"
     },
