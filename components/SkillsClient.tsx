@@ -94,6 +94,7 @@ export default function SkillsClient({
           const installLabel = labels.columns.install ?? "Install / Link";
           const hasLink = Boolean(skill.link?.trim());
           const hasInstall = Boolean(skill.install?.trim());
+          const showInstall = hasInstall && !hasLink;
           const notesText = skill.notes?.trim() ? skill.notes : "-";
 
           return (
@@ -138,12 +139,14 @@ export default function SkillsClient({
                     href={skill.link}
                     target="_blank"
                     rel="noreferrer"
+                    title={skill.link}
+                    aria-label={`Link: ${skill.link}`}
                   >
-                    {skill.link}
+                    Link
                   </a>
                 )}
-                {hasInstall && <div className="break-words">{skill.install}</div>}
-                {!hasLink && !hasInstall && <div>-</div>}
+                {showInstall && <div className="break-words">{skill.install}</div>}
+                {!hasLink && !showInstall && <div>-</div>}
               </div>
             </div>
             <div>
