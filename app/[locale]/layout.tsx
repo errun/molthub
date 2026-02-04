@@ -36,6 +36,9 @@ export default async function LocaleLayout({
             <Link className="btn-ghost" href={`${prefix}/skills`}>
               {dict.nav.skills}
             </Link>
+            <Link className="btn-ghost" href={`${prefix}/openclawskill`}>
+              {dict.nav.openclawskill ?? "OpenClaw Skills"}
+            </Link>
             <Link className="btn-ghost" href={`${prefix}/radar`}>
               {dict.nav.radar}
             </Link>

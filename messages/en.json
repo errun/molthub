@@ -1,6 +1,7 @@
 {
   "nav": {
     "skills": "Skills",
+    "openclawskill": "OpenClaw Skills",
     "radar": "Radar",
     "about": "About",
     "language": "Lang",
@@ -62,28 +63,22 @@
     "ctaInstallGuides": "Install Guides (Windows/macOS/Linux)"
   },
   "skills": {
-    "metaTitle": "Molthub.bot - Moltbot Skills Dashboard & MSI(TM) Scores",
-    "metaDescription": "Browse Moltbot skills with MSI(TM) scores, tiers, and operator notes. Search by name, sort by MSI, and scan stability signals at a glance. Updated weekly.",
+    "metaTitle": "OpenClaw Top 10 Skills & Integrations",
+    "metaDescription": "Curated Top 10 OpenClaw skills/integrations with reasons, scenarios, value, and official links.",
     "keywords": [
-      "Moltbot skills dashboard",
-      "Moltbot MSI scores",
-      "Moltbot skill stability",
-      "Moltbot tiers",
-      "Moltbot reliability index"
+      "OpenClaw skills",
+      "OpenClaw integrations",
+      "OpenClaw top 10",
+      "OpenClaw channels",
+      "OpenClaw tooling"
     ],
-    "title": "Moltbot Skills Dashboard",
-    "summary": "Search Moltbot skills by name, then sort by MSI to review current reliability posture.",
-    "summary2": "This view summarizes community signals, tier posture, and recent stability notes for Moltbot skills.",
+    "title": "OpenClaw Top 10 Skills / Integrations",
     "searchPlaceholder": "Search skills",
-    "sortHigh": "Sort: MSI High -> Low",
-    "sortLow": "Sort: MSI Low -> High",
-    "columns": {
-      "name": "Name",
-      "msi": "MSI",
-      "tier": "Tier",
-      "install": "Install / Link",
-      "notes": "Notes",
-      "lastUpdate": "Last Update"
+    "sections": {
+      "reason": "Why",
+      "scenario": "Scenarios",
+      "value": "Value",
+      "links": "Links"
     },
     "empty": "No skills match the current search."
   },

@@ -21,6 +21,9 @@ export default async function SiteLayout({
             <Link className="btn-ghost" href="/skills">
               {dict.nav.skills}
             </Link>
+            <Link className="btn-ghost" href="/openclawskill">
+              {dict.nav.openclawskill ?? "OpenClaw Skills"}
+            </Link>
             <Link className="btn-ghost" href="/radar">
               {dict.nav.radar}
             </Link>

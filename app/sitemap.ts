@@ -21,6 +21,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9
     },
     {
+      url: `${baseUrl}/openclawskill`,
+      lastModified,
+      changeFrequency: "weekly",
+      priority: 0.85
+    },
+    {
       url: `${baseUrl}/radar`,
       lastModified,
       changeFrequency: "weekly",
@@ -70,6 +76,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified,
       changeFrequency: "weekly",
       priority: 0.6
+    },
+    {
+      url: `${baseUrl}/${locale}/openclawskill`,
+      lastModified,
+      changeFrequency: "weekly",
+      priority: 0.55
     },
     {
       url: `${baseUrl}/${locale}/radar`,

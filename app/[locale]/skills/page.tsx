@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import SkillsClient, { type Skill } from "@/components/SkillsClient";
+import SkillsClient, { type SkillsData } from "@/components/SkillsClient";
 import JsonLd from "@/components/JsonLd";
 import skillsDataRaw from "@/data/skills.json";
 import { getDictionary } from "@/lib/dictionaries";
@@ -57,7 +57,7 @@ export default async function LocaleSkillsPage({ params }: PageProps) {
   const locale = params.locale as Locale;
   const dict = await getDictionary(locale);
   const baseUrl = getBaseUrl();
-  const skillsData = skillsDataRaw as Skill[];
+  const skillsData = skillsDataRaw as SkillsData;
 
   return (
     <section className="container py-16">
@@ -77,7 +77,7 @@ export default async function LocaleSkillsPage({ params }: PageProps) {
           inLanguage: locale
         }}
       />
-      <SkillsClient skills={skillsData} labels={dict.skills} />
+      <SkillsClient data={skillsData} labels={dict.skills} />
     </section>
   );
 }

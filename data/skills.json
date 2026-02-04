@@ -1,243 +1,152 @@
-﻿[
-  {
-    "name": "gmail",
-    "msi": 9.5,
-    "tier": "Stable",
-    "install": "或 ClawHub 搜 \"gmail\"",
-    "link": "https://github.com/openclaw/skills/tree/main/skills/.../gmail",
-    "notes": "内建/高用",
-    "lastUpdate": "2026-02-03"
+﻿{
+  "intro": {
+    "description": "下面这份是我按「OpenClaw 里最常用、最能立刻产生价值」的标准，整理的 Top 10 skills / integrations（含核心能力类与渠道类）。每个我都写了：为什么推荐、典型使用场景、给用户的价值、链接。",
+    "notes": [
+      "备注：OpenClaw 的“Skill”有两类：",
+      "• 能力/工具类（让 agent 会用浏览器、定时、设备等）",
+      "• 渠道/集成类（把 agent 接到 Telegram/Discord 等）",
+      "实战里这两类经常一起用，效果最好。"
+    ]
   },
-  {
-    "name": "calendar",
-    "msi": 9,
-    "tier": "Stable",
-    "install": "ClawHub 搜 \"calendar\" 或 bundled Google/Outlook",
-    "notes": "内建",
-    "lastUpdate": "2026-02-03"
-  },
-  {
-    "name": "web-browser / puppeteer-browser",
-    "msi": 8.5,
-    "tier": "Risky",
-    "link": "https://github.com/openclaw/skills/tree/main/skills/.../puppeteer-browser",
-    "notes": "强大但需限权",
-    "lastUpdate": "2026-02-03"
-  },
-  {
-    "name": "twitter / x-client",
-    "msi": 8,
-    "tier": "Risky",
-    "install": "ClawHub 搜 \"twitter\" 或 \"x\"",
-    "notes": "API 注意额度",
-    "lastUpdate": "2026-02-03"
-  },
-  {
-    "name": "telegram",
-    "msi": 9,
-    "tier": "Stable",
-    "link": "https://github.com/openclaw/skills/tree/main/skills/.../telegram",
-    "notes": "超搭 OpenClaw",
-    "lastUpdate": "2026-02-03"
-  },
-  {
-    "name": "whatsapp",
-    "msi": 8.5,
-    "tier": "Risky",
-    "install": "ClawHub 搜 \"whatsapp\"",
-    "notes": "近期稳定提升",
-    "lastUpdate": "2026-02-03"
-  },
-  {
-    "name": "feishu / lark",
-    "msi": 9.2,
-    "tier": "Stable",
-    "install": "ClawHub 搜 \"feishu\" 或 \"lark\"",
-    "notes": "国内最友好",
-    "lastUpdate": "2026-02-03"
-  },
-  {
-    "name": "dingtalk",
-    "msi": 8.8,
-    "tier": "Risky",
-    "install": "ClawHub 搜 \"dingtalk\"",
-    "notes": "上班族专用",
-    "lastUpdate": "2026-02-03"
-  },
-  {
-    "name": "notion",
-    "msi": 8.5,
-    "tier": "Risky",
-    "link": "https://github.com/openclaw/skills/tree/main/skills/.../notion",
-    "notes": "API 偶尔慢",
-    "lastUpdate": "2026-02-03"
-  },
-  {
-    "name": "todoist",
-    "msi": 8,
-    "tier": "Risky",
-    "install": "ClawHub 搜 \"todoist\"",
-    "notes": "轻量任务",
-    "lastUpdate": "2026-02-03"
-  },
-  {
-    "name": "jina-reader / readability",
-    "msi": 9,
-    "tier": "Stable",
-    "install": "ClawHub 搜 \"jina-reader\" 或 \"readability\"",
-    "notes": "阅读神器",
-    "lastUpdate": "2026-02-03"
-  },
-  {
-    "name": "youtube-transcript",
-    "msi": 9.3,
-    "tier": "Stable",
-    "install": "ClawHub 搜 \"youtube transcript\"",
-    "notes": "学习必备",
-    "lastUpdate": "2026-02-03"
-  },
-  {
-    "name": "rss-monitor",
-    "msi": 8.7,
-    "tier": "Risky",
-    "install": "ClawHub 搜 \"rss\"",
-    "notes": "资讯自动化",
-    "lastUpdate": "2026-02-03"
-  },
-  {
-    "name": "crypto-wallet-monitor",
-    "msi": 7,
-    "tier": "Unstable",
-    "install": "ClawHub 搜 crypto wallet（小心恶意！）",
-    "notes": "高风险，慎装",
-    "lastUpdate": "2026-02-03"
-  },
-  {
-    "name": "imsg / ios-messages",
-    "msi": 8,
-    "tier": "Risky",
-    "install": "ClawHub 搜 \"imessage\" 或 \"ios messages\"",
-    "notes": "苹果专属",
-    "lastUpdate": "2026-02-03"
-  },
-  {
-    "name": "shell-exec",
-    "msi": 7.5,
-    "tier": "Unstable",
-    "install": "Bundled 或 ClawHub 搜 \"shell\"",
-    "notes": "最危险，严限",
-    "lastUpdate": "2026-02-03"
-  },
-  {
-    "name": "file-system",
-    "msi": 8.5,
-    "tier": "Risky",
-    "install": "Bundled file ops",
-    "notes": "日常文件",
-    "lastUpdate": "2026-02-03"
-  },
-  {
-    "name": "weather",
-    "msi": 8,
-    "tier": "Risky",
-    "install": "ClawHub 搜 \"weather\"",
-    "notes": "简单实用",
-    "lastUpdate": "2026-02-03"
-  },
-  {
-    "name": "stock-price",
-    "msi": 7.8,
-    "tier": "Unstable",
-    "install": "ClawHub 搜 \"stock\" 或 \"finance\"",
-    "notes": "财经用",
-    "lastUpdate": "2026-02-03"
-  },
-  {
-    "name": "github",
-    "msi": 8.8,
-    "tier": "Risky",
-    "link": "https://github.com/openclaw/skills/tree/main/skills/steipete/github/SKILL.md",
-    "notes": "程序员神器",
-    "lastUpdate": "2026-02-03"
-  },
-  {
-    "name": "vscode-remote",
-    "msi": 7,
-    "tier": "Unstable",
-    "install": "ClawHub 搜 \"vscode\"（实验性）",
-    "notes": "不太稳",
-    "lastUpdate": "2026-02-03"
-  },
-  {
-    "name": "deepl-translate",
-    "msi": 9,
-    "tier": "Stable",
-    "install": "ClawHub 搜 \"deepl\"",
-    "notes": "翻译顶级",
-    "lastUpdate": "2026-02-03"
-  },
-  {
-    "name": "perplexity-search",
-    "msi": 8.5,
-    "tier": "Risky",
-    "install": "ClawHub 搜 \"perplexity\"",
-    "notes": "研究好帮手",
-    "lastUpdate": "2026-02-03"
-  },
-  {
-    "name": "arxiv-paper",
-    "msi": 8.7,
-    "tier": "Risky",
-    "install": "ClawHub 搜 \"arxiv\"",
-    "notes": "学术党爱",
-    "lastUpdate": "2026-02-03"
-  },
-  {
-    "name": "whoop-monitor",
-    "msi": 7.5,
-    "tier": "Unstable",
-    "install": "ClawHub 搜 \"whoop\"",
-    "notes": "小众健身",
-    "lastUpdate": "2026-02-03"
-  },
-  {
-    "name": "flight-checkin",
-    "msi": 8,
-    "tier": "Risky",
-    "install": "ClawHub 搜 \"flight\"",
-    "notes": "出差用",
-    "lastUpdate": "2026-02-03"
-  },
-  {
-    "name": "email-digest",
-    "msi": 9,
-    "tier": "Stable",
-    "install": "ClawHub 搜 \"email digest\"",
-    "notes": "收件箱救星",
-    "lastUpdate": "2026-02-03"
-  },
-  {
-    "name": "cron-jobs",
-    "msi": 9.2,
-    "tier": "Stable",
-    "install": "ClawHub 搜 \"cron\"",
-    "notes": "真正自主化",
-    "lastUpdate": "2026-02-03"
-  },
-  {
-    "name": "memory-longterm",
-    "msi": 8.8,
-    "tier": "Risky",
-    "install": "Bundled 或 ClawHub 搜 \"memory\"",
-    "notes": "越用越懂你",
-    "lastUpdate": "2026-02-03"
-  },
-  {
-    "name": "self-improve / skill-generator",
-    "msi": 9,
-    "tier": "Stable",
-    "install": "ClawHub 搜 \"self improve\" 或 \"skill generator\"",
-    "notes": "",
-    "lastUpdate": "2026-02-03"
+  "items": [
+    {
+      "name": "ClawHub（技能市场/安装器）",
+      "reason": "找技能、装技能、升级技能的“入口”。没有它扩展生态会很慢。",
+      "scenario": "想加 Gmail/日历/Notion/各种第三方服务时，先上 ClawHub 搜。",
+      "value": "把“写代码集成”变成“搜一下就能装”，迭代速度快很多。",
+      "links": [
+        {
+          "label": "Docs",
+          "url": "https://docs.openclaw.ai/tools/clawhub"
+        },
+        {
+          "label": "Registry / GitHub",
+          "url": "https://github.com/openclaw/clawhub"
+        }
+      ]
+    },
+    {
+      "name": "Agent Browser（网页自动化/爬取/点点点）",
+      "reason": "几乎所有“真实任务”（订票/查资料/后台操作/填表）最终都落到浏览器。",
+      "scenario": "自动登录后台、抓网页信息、批量提交表单、截图/导出 PDF。",
+      "value": "把“我给你链接你自己看”升级成“我替你完成网页操作并给结果”。",
+      "links": [
+        {
+          "label": "Docs",
+          "url": "https://docs.openclaw.ai/tools/browser"
+        }
+      ]
+    },
+    {
+      "name": "Cron / Wake（定时任务与提醒）",
+      "reason": "让 OpenClaw 从“对话机器人”变成“会主动办事的助理”。",
+      "scenario": "每天早上推送天气/待办；每周汇总；30 分钟后提醒你开会。",
+      "value": "把重复劳动自动化，真正省时间，而不是只回答问题。",
+      "links": [
+        {
+          "label": "CLI",
+          "url": "https://docs.openclaw.ai/cli/cron"
+        }
+      ]
+    },
+    {
+      "name": "Nodes（手机/设备能力：截图、录屏、定位、通知、摄像头）",
+      "reason": "把 agent 触角从服务器延伸到你的设备与现实环境。",
+      "scenario": "手机截图/录屏给我分析；获取定位做天气/行程；摄像头抓拍；推送通知到设备。",
+      "value": "解决“我不在电脑前”或“信息在手机里”的断点。",
+      "links": [
+        {
+          "label": "CLI",
+          "url": "https://docs.openclaw.ai/cli/nodes"
+        }
+      ]
+    },
+    {
+      "name": "Telegram（消息渠道集成）",
+      "reason": "最适合做个人助理入口：轻量、稳定、跨端、机器人生态成熟。",
+      "scenario": "随时给 agent 发任务；群里 @ 它让它只在被点名时出现；配合定时推送。",
+      "value": "让 OpenClaw 真正“住进你的日常聊天工具”。",
+      "links": [
+        {
+          "label": "Docs",
+          "url": "https://docs.openclaw.ai/channels/telegram"
+        }
+      ]
+    },
+    {
+      "name": "Discord（团队/社区协作渠道）",
+      "reason": "适合多人协作、项目群、社区；权限/频道结构清晰。",
+      "scenario": "在项目频道里做“值班助理”；自动回答 FAQ；协助 triage issue。",
+      "value": "把 agent 变成团队成员，提高群聊的信息处理效率。",
+      "links": [
+        {
+          "label": "Docs",
+          "url": "https://docs.openclaw.ai/channels/discord"
+        }
+      ]
+    },
+    {
+      "name": "Slack（工作场景/企业常用渠道）",
+      "reason": "企业内部最常见；线程/权限/工作流生态完善。",
+      "scenario": "在特定 channel 里做“信息汇总助手”；自动生成会议纪要；对接内部流程。",
+      "value": "减少上下文切换（不用开一堆网页/工具），把操作收敛到 Slack。",
+      "links": [
+        {
+          "label": "Docs",
+          "url": "https://docs.openclaw.ai/channels/slack"
+        }
+      ]
+    },
+    {
+      "name": "WhatsApp（高频日常入口）",
+      "reason": "很多人日常最常用的即时通讯；把 agent 放进最常用入口，使用频率会暴涨。",
+      "scenario": "随手语音/文字问；家庭群/工作群只在被 @ 时回答；日常提醒。",
+      "value": "降低使用门槛，真正做到“随时随地叫到 tt”。",
+      "links": [
+        {
+          "label": "Docs",
+          "url": "https://docs.openclaw.ai/channels/whatsapp"
+        }
+      ]
+    },
+    {
+      "name": "Feishu（飞书：文档/知识库/企业协作）",
+      "reason": "国内团队常用，文档/表格/知识库协作能力强，适合“写作+管理”类任务。",
+      "scenario": "自动生成周报/会议纪要到飞书文档；更新 wiki；管理云盘文件。",
+      "value": "把“对话内容”直接落到可协作的产物（文档/知识库），减少复制粘贴。",
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/m1heng/clawdbot-feishu"
+        },
+        {
+          "label": "NPM",
+          "url": "https://www.npmjs.com/package/@m1heng-clawd/feishu"
+        }
+      ]
+    },
+    {
+      "name": "Skill Creator（自己做技能/封装流程）",
+      "reason": "当现成技能不完全满足需求时，这是“从用户到开发者”的最短路径。",
+      "scenario": "把你常用的一套流程（比如日报生成+发群+归档）封装成一个命令/技能。",
+      "value": "把一次性技巧沉淀为可复用工具，越用越像“专属助理”。",
+      "links": [
+        {
+          "label": "Docs",
+          "url": "https://docs.openclaw.ai/tools/skills"
+        },
+        {
+          "label": "GitHub",
+          "url": "https://github.com/openclaw/openclaw/tree/main/skills/skill-creator"
+        }
+      ]
+    }
+  ],
+  "security": {
+    "title": "安全提醒（重要）",
+    "prefix": "你刚启用了 Brave 搜索：以后从 ClawHub 找技能时，尽量只装你信任来源/维护活跃的技能；不熟的技能先看 ",
+    "linkLabel": "SKILL.md",
+    "linkUrl": "http://skill.md/",
+    "suffix": " 有没有要求执行高风险命令，必要时先问我做审计。"
   }
-]
+}

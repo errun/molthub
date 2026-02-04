@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
-import SkillsClient, { type Skill } from "@/components/SkillsClient";
+import SkillsClient, { type SkillsData } from "@/components/SkillsClient";
 import JsonLd from "@/components/JsonLd";
 import skillsDataRaw from "@/data/skills.json";
 import { getDictionary } from "@/lib/dictionaries";
 import { getBaseUrl } from "@/lib/site-url";
 
 const baseUrl = getBaseUrl();
-const pageTitle = "Molthub.bot - Moltbot Skills Dashboard & MSI(TM) Scores";
+const pageTitle = "OpenClaw Top 10 Skills & Integrations";
 const pageDescription =
-  "Browse Moltbot skills with MSI(TM) scores, tiers, and operator notes. Search by name, sort by MSI, and scan stability signals at a glance. Updated weekly.";
+  "Curated Top 10 OpenClaw skills/integrations with reasons, scenarios, value, and official links.";
 
 export const metadata: Metadata = {
   title: pageTitle,
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
 
 export default async function SkillsPage() {
   const dict = await getDictionary("en");
-  const skillsData = skillsDataRaw as Skill[];
+  const skillsData = skillsDataRaw as SkillsData;
 
   return (
     <section className="container py-16">
@@ -67,7 +67,7 @@ export default async function SkillsPage() {
           inLanguage: "en"
         }}
       />
-      <SkillsClient skills={skillsData} labels={dict.skills} />
+      <SkillsClient data={skillsData} labels={dict.skills} />
     </section>
   );
 }
