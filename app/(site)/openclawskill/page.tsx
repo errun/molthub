@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
-import MarkdownContent from "@/components/MarkdownContent";
 import JsonLd from "@/components/JsonLd";
+import MarkdownContent from "@/components/MarkdownContent";
+import OpenClawSkillTable from "@/components/OpenClawSkillTable";
 import { getBaseUrl } from "@/lib/site-url";
-import { getSkillTableMarkdown } from "@/lib/skill-table";
+import { getSkillTableMarkdown, parseSkillTableMarkdown } from "@/lib/skill-table";
 
 const baseUrl = getBaseUrl();
 const pageTitle = "OpenClaw Skills Table | molthub.bot";
@@ -45,6 +46,15 @@ export const metadata: Metadata = {
 
 export default async function OpenClawSkillPage() {
   const markdownContent = await getSkillTableMarkdown("en");
+  const { title, headers, rows, restMarkdown } = parseSkillTableMarkdown(markdownContent);
+  const normalizedHeaders = headers.map((header) =>
+    header.toLowerCase().replace(/\s+/g, "")
+  );
+  const installHeaderIndex = normalizedHeaders.findIndex((header) =>
+    header.includes("install")
+  );
+  const installColumnIndex =
+    installHeaderIndex >= 0 ? installHeaderIndex : Math.max(headers.length - 1, 0);
 
   return (
     <section className="container py-16 md:py-24">
@@ -72,7 +82,19 @@ export default async function OpenClawSkillPage() {
         </div>
 
         <div className="card p-6 md:p-10">
-          <MarkdownContent content={markdownContent} />
+          <div className="space-y-6">
+            {title && (
+              <h1 className="font-display text-3xl md:text-4xl">{title}</h1>
+            )}
+            {restMarkdown && <MarkdownContent content={restMarkdown} />}
+            <OpenClawSkillTable
+              headers={headers}
+              rows={rows}
+              installColumnIndex={installColumnIndex}
+              copyLabel="Copy"
+              copiedLabel="Copied"
+            />
+          </div>
         </div>
       </div>
     </section>

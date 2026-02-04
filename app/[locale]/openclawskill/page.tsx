@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import MarkdownContent from "@/components/MarkdownContent";
+import OpenClawSkillTable from "@/components/OpenClawSkillTable";
 import JsonLd from "@/components/JsonLd";
 import { getBaseUrl } from "@/lib/site-url";
-import { getSkillTableMarkdown } from "@/lib/skill-table";
+import { getSkillTableMarkdown, parseSkillTableMarkdown } from "@/lib/skill-table";
 import { isLocale, type Locale } from "@/lib/i18n";
 
 type PageProps = {
@@ -85,6 +86,24 @@ export default async function LocaleOpenClawSkillPage({ params }: PageProps) {
   const copy = getCopy(locale);
   const baseUrl = getBaseUrl();
   const markdownContent = await getSkillTableMarkdown(locale);
+  const { title, headers, rows, restMarkdown } = parseSkillTableMarkdown(markdownContent);
+  const normalizedHeaders = headers.map((header) =>
+    header.toLowerCase().replace(/\s+/g, "")
+  );
+  const installHeaderIndex = normalizedHeaders.findIndex(
+    (header) =>
+      header.includes("install") || header.includes("安装") || header.includes("安裝")
+  );
+  const installColumnIndex =
+    installHeaderIndex >= 0 ? installHeaderIndex : Math.max(headers.length - 1, 0);
+  const copyLabels: Record<Locale, { copy: string; copied: string }> = {
+    en: { copy: "Copy", copied: "Copied" },
+    zh: { copy: "复制", copied: "已复制" },
+    ja: { copy: "コピー", copied: "コピー済み" },
+    ko: { copy: "복사", copied: "복사됨" }
+  };
+  const { copy: copyLabel, copied: copiedLabel } =
+    copyLabels[locale] ?? copyLabels.en;
   const contentLanguage = locale === "zh" ? "zh" : "en";
 
   return (
@@ -113,7 +132,19 @@ export default async function LocaleOpenClawSkillPage({ params }: PageProps) {
         </div>
 
         <div className="card p-6 md:p-10">
-          <MarkdownContent content={markdownContent} />
+          <div className="space-y-6">
+            {title && (
+              <h1 className="font-display text-3xl md:text-4xl">{title}</h1>
+            )}
+            {restMarkdown && <MarkdownContent content={restMarkdown} />}
+            <OpenClawSkillTable
+              headers={headers}
+              rows={rows}
+              installColumnIndex={installColumnIndex}
+              copyLabel={copyLabel}
+              copiedLabel={copiedLabel}
+            />
+          </div>
         </div>
       </div>
     </section>
